@@ -1,1 +1,1 @@
-web: gunircon project:app
+web: gunicorn project:app
