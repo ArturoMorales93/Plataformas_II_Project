@@ -1,7 +1,7 @@
 from flask import Flask
 
-app = Flask(__name__)
+from .index import index
 
-@app.route('/', methods=['GET'])
-def index():
-    return 'Hola Arturo'
+app = Flask(__name__)
+app.config.from_pyfile('config/config.cfg')
+app.register_blueprint(index)
