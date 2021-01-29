@@ -1,0 +1,93 @@
+.header {
+    background-color: $soft-color;
+}
+
+.footer {
+    background-color: $dark-color;
+    color: $font-main-color;
+}
+
+// Font
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans JP'), url('/fonts/Roboto-Regular.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans JP'), url('/fonts/NotoSansJP-Regular.otf') format('woff2');
+}
+
+body {    
+    font-family: 'Roboto';
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+// Navbar
+.navbar-icon {
+    width: 2em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:$font-main-color;
+}
+
+.navbar-collapse {
+    background-color: $soft-color;
+    padding-left: 1em;
+}
+
+.dropdown-menu {
+    background-color: $main-color;
+}
+
+.dropdown-item {
+    color: $font-main-color;
+}
+
+// Main-sections
+section:nth-child(even) {
+    background-color: $main-color;
+    color: $font-main-color;
+}
+
+// Sección 2
+.temario-container {
+    background-color: $dark-color;
+}
+
+.temario-item {
+    border: 1px solid $soft-color;
+
+    &:first-child {
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+    &:not(&:first-child):hover {
+        background-color: $soft-color;
+    }
+}
+
+// Sección 3
+.card {
+    font-size: .9em;
+    background-color: lighten($main-color, 25);
+
+    img {
+        border-radius: 1em;
+    }
+}
+
+// Banner
+.banner-img {
+    border-radius: 25%;
+    box-shadow: .25em .5em 1em $main-color;
+}
