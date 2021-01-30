@@ -9,7 +9,11 @@ body {
 }
 
 h1, h2, h3 {
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+
+    @include media(md) {
+        margin-bottom: 1em;
+    }
 }
 
 img {

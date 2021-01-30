@@ -1,9 +1,10 @@
 // Layout
-$header-height: 4em;
-$footer-height: 3em;
-$body-padding: 10em;
-
-$side-padding-m: 3em;
+:root {
+    --header-height: 3em;
+    --footer-height: 3em;
+    --body-padding: 1em;
+    --side-padding: 1em;
+}
 
 // Theme
 $soft-color: #84828f;
@@ -11,3 +12,10 @@ $main-color: #536271;
 $dark-color: #2c3d55;
 $font-main-color: #fff;
 $font-second-color: #000;
+
+// Breakpoints
+$breakpoints: (
+    md: 768px,
+    lg: 1024px,
+    xl: 1200px
+);

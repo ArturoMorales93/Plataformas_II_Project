@@ -33,7 +33,11 @@ h1, h2, h3 {
 
 // Navbar
 .navbar-icon {
-    width: 2em;
+    width: 1.75em;
+
+    @include media(md) {
+        width: 2em;
+    }
 }
 
 .navbar-dark .navbar-nav .nav-link {

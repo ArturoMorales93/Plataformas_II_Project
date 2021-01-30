@@ -5,6 +5,13 @@ Ejecutarlo cada vez que se cree un nuevo archivo .scss
 node-sass -w project/static/scss -o project/static/css --output-style=expanded --source-map=true
 
 */
+:root {
+  --header-height: 3em;
+  --footer-height: 3em;
+  --body-padding: 1em;
+  --side-padding: 1em;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -16,7 +23,13 @@ body {
 }
 
 h1, h2, h3 {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
+}
+
+@media screen and (min-width: 768px) {
+  h1, h2, h3 {
+    margin-bottom: 1em;
+  }
 }
 
 img {
@@ -41,20 +54,44 @@ ul {
 
 body {
   display: grid;
-  grid-template-rows: 4em 1fr 3em;
+  grid-template-rows: var(--header-height) 1fr var(--footer-height);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    --header-height: 3.5em;
+  }
 }
 
 section {
-  padding: 2em 10em;
+  padding: 1.25em var(--body-padding);
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 2em var(--body-padding);
+  }
 }
 
 .header, .footer {
-  padding: 0 10em;
+  padding: 0 var(--body-padding);
 }
 
-.side-padding-m {
-  padding-left: 3em;
-  padding-right: 3em;
+@media screen and (min-width: 768px) {
+  section, .header, .footer {
+    --body-padding: 10em;
+  }
+}
+
+.side-padding {
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
+}
+
+@media screen and (min-width: 768px) {
+  .side-padding {
+    --side-padding: 3em;
+  }
 }
 
 .text-center {
@@ -69,7 +106,14 @@ section {
 }
 
 .navbar {
-  height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 100%;
+  }
 }
 
 section:first-child {
@@ -87,18 +131,34 @@ section:first-child {
 }
 
 .main-banner {
-  height: 50vh;
+  height: 25vh;
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .main-banner {
+    height: 50vh;
+  }
 }
 
 .banner-title {
   align-self: center;
-  justify-content: center;
+}
+
+.banner-title h1 {
+  margin: 0;
 }
 
 .img-banner-container {
-  width: 50%;
-  justify-content: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .img-banner-container {
+    display: block;
+    width: 50%;
+    justify-content: center;
+  }
 }
 
 .main-banner div {
@@ -107,25 +167,49 @@ section:first-child {
 }
 
 .banner-img {
-  align-self: center;
-  width: 75%;
-  max-width: 75%;
+  display: none;
 }
 
-.home-grid-container {
-  display: grid;
-  gap: 2em;
-  grid-template-columns: 3fr 1fr;
+@media screen and (min-width: 768px) {
+  .banner-img {
+    display: block;
+    align-self: center;
+    width: 75%;
+    max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-grid-container {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.home-article p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .home-article p {
+    text-align: center;
+  }
 }
 
 .temario-container {
   height: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .temario-item {
   flex-grow: 1;
+  padding-top: .25em;
+  padding-bottom: .25em;
 }
 
 .temario-item:first-child {
@@ -150,9 +234,15 @@ section:first-child {
 }
 
 .card {
-  max-width: 200px;
   padding: .5em;
   margin-bottom: 2em;
+  max-width: 225px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 200px;
+  }
 }
 
 .card img {
@@ -161,6 +251,10 @@ section:first-child {
 
 .card h3 {
   margin-bottom: .5em;
+}
+
+.card p {
+  text-align: justify;
 }
 
 .img-utn-container {
@@ -211,7 +305,13 @@ h1, h2, h3 {
 }
 
 .navbar-icon {
-  width: 2em;
+  width: 1.75em;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-icon {
+    width: 2em;
+  }
 }
 
 .navbar-dark .navbar-nav .nav-link {
