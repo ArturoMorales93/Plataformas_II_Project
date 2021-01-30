@@ -12,18 +12,19 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local('Noto Sans JP'), url('/fonts/Roboto-Regular.ttf') format('woff2');
+    src: local('Noto Sans JP'), url('/project/static/fonts/Roboto-Regular.ttf') format('woff2');
 }
 
 @font-face {
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 400;
-    src: local('Noto Sans JP'), url('/fonts/NotoSansJP-Regular.otf') format('woff2');
+    src: local('Noto Sans JP'), url('/project/static/fonts/NotoSansJP-Regular.otf') format('woff2');
 }
 
 body {    
     font-family: 'Roboto';
+    color: $font-second-color;
 }
 
 h1, h2, h3 {

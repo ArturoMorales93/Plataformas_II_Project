@@ -2,7 +2,7 @@
 Comando para compilar Sass en tiempo real y creando un map.
 Ejecutarlo cada vez que se cree un nuevo archivo .scss
 
-node-sass -w scss -o css --output-style=expanded --source-map=true
+node-sass -w project/static/scss -o project/static/css --output-style=expanded --source-map=true
 
 */
 
