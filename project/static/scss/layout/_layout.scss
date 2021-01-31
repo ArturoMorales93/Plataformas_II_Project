@@ -49,10 +49,7 @@ section, .header, .footer {
 .navbar {
     padding-top: 0;
     padding-bottom: 0;
-
-    @include media(md) {
-        height: 100%;
-    }
+    height: 100%;
 }
 
 // Baner
