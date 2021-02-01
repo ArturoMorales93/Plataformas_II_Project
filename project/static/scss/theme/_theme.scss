@@ -7,11 +7,12 @@
     color: $font-main-color;
 }
 
-// Font
+/* Font */
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
+    display: auto;
     src: local('Noto Sans JP'), url('/static/fonts/Roboto-Regular.ttf') format('woff2');
 }
 
@@ -19,11 +20,12 @@
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 400;
+    display: auto;
     src: local('Noto Sans JP'), url('/static/fonts/NotoSansJP-Regular.otf') format('woff2');
 }
 
 body {    
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: $font-second-color;
 }
 
@@ -31,7 +33,7 @@ h1, h2, h3 {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-// Navbar
+/* Navbar */
 .navbar-icon {
     width: 1.75em;
 
@@ -57,13 +59,13 @@ h1, h2, h3 {
     color: $font-main-color;
 }
 
-// Main-sections
+/* Main-sections */
 section:nth-child(even) {
     background-color: $main-color;
     color: $font-main-color;
 }
 
-// Sección 2
+/* Sección 2 */
 .temario-container {
     background-color: $dark-color;
 }
@@ -81,7 +83,7 @@ section:nth-child(even) {
     }
 }
 
-// Sección 3
+/* Sección 3 */
 .card {
     font-size: .9em;
     background-color: lighten($main-color, 25);
@@ -91,7 +93,7 @@ section:nth-child(even) {
     }
 }
 
-// Banner
+/* Banner */
 .banner-img {
     border-radius: 25%;
     box-shadow: .25em .5em 1em $main-color;
