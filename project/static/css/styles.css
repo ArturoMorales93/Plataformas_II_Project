@@ -131,7 +131,7 @@ section:first-child {
 }
 
 .main-banner {
-  height: 25vh;
+  height: 10em;
   display: flex;
 }
 
@@ -139,6 +139,10 @@ section:first-child {
   .main-banner {
     height: 50vh;
   }
+}
+
+.main-banner div {
+  flex-grow: 1;
 }
 
 .banner-title {
@@ -155,19 +159,10 @@ section:first-child {
 
 @media screen and (min-width: 768px) {
   .img-banner-container {
-    display: block;
+    display: flex;
     width: 50%;
     justify-content: center;
   }
-}
-
-.main-banner div {
-  display: flex;
-  flex-grow: 1;
-}
-
-.banner-img {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {

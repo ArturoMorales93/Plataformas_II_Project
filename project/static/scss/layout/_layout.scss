@@ -68,12 +68,16 @@ section:first-child {
 }
 
 .main-banner {
-    height: 25vh;
+    height: 10em;
     display: flex;
 
     @include media(md) {
         height: 50vh;
     }
+}
+
+.main-banner div {
+    flex-grow: 1;
 }
 
 .banner-title {
@@ -86,21 +90,15 @@ section:first-child {
 
 .img-banner-container {
     display: none;
-
+    
     @include media(md) {
-        display: block;
+        display: flex;
         width: 50%;
         justify-content: center;
     }
 }
 
-.main-banner div {
-    display: flex;
-    flex-grow: 1;
-}
-
 .banner-img {
-    display: none;
 
     @include media(md) {
         display: block;
