@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Comando para compilar Sass en tiempo real y creando un map.
 Ejecutarlo cada vez que se cree un nuevo archivo .scss
@@ -5,6 +6,7 @@ Ejecutarlo cada vez que se cree un nuevo archivo .scss
 node-sass -w project/static/scss -o project/static/css --output-style=expanded --source-map=true
 
 */
+/* Layout */
 :root {
   --header-height: 3em;
   --footer-height: 3em;
@@ -12,6 +14,7 @@ node-sass -w project/static/scss -o project/static/css --output-style=expanded -
   --side-padding: 1em;
 }
 
+/* Breakpoints */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -98,6 +101,7 @@ section {
   text-align: center;
 }
 
+/* Header */
 .header {
   position: sticky;
   z-index: 1;
@@ -111,6 +115,7 @@ section {
   height: 100%;
 }
 
+/* Baner */
 section:first-child {
   position: relative;
 }
@@ -126,7 +131,7 @@ section:first-child {
 }
 
 .main-banner {
-  height: 25vh;
+  height: 10em;
   display: flex;
 }
 
@@ -134,6 +139,10 @@ section:first-child {
   .main-banner {
     height: 50vh;
   }
+}
+
+.main-banner div {
+  flex-grow: 1;
 }
 
 .banner-title {
@@ -150,19 +159,10 @@ section:first-child {
 
 @media screen and (min-width: 768px) {
   .img-banner-container {
-    display: block;
+    display: flex;
     width: 50%;
     justify-content: center;
   }
-}
-
-.main-banner div {
-  display: flex;
-  flex-grow: 1;
-}
-
-.banner-img {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -174,6 +174,7 @@ section:first-child {
   }
 }
 
+/* Main */
 @media screen and (min-width: 768px) {
   .home-grid-container {
     display: grid;
@@ -182,6 +183,7 @@ section:first-child {
   }
 }
 
+/* Sección 2 */
 .home-article p {
   text-align: justify;
 }
@@ -221,6 +223,7 @@ section:first-child {
   align-items: center;
 }
 
+/* Sección 3 */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -257,6 +260,7 @@ section:first-child {
   height: 100%;
 }
 
+/* Footer */
 .footer {
   display: flex;
   align-items: center;
@@ -276,10 +280,12 @@ section:first-child {
   color: #fff;
 }
 
+/* Font */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
+  display: auto;
   src: local("Noto Sans JP"), url("/static/fonts/Roboto-Regular.ttf") format("woff2");
 }
 
@@ -287,11 +293,12 @@ section:first-child {
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
+  display: auto;
   src: local("Noto Sans JP"), url("/static/fonts/NotoSansJP-Regular.otf") format("woff2");
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   color: #000;
 }
 
@@ -299,6 +306,7 @@ h1, h2, h3 {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* Navbar */
 .navbar-icon {
   width: 1.75em;
 }
@@ -326,11 +334,13 @@ h1, h2, h3 {
   color: #fff;
 }
 
+/* Main-sections */
 section:nth-child(even) {
   background-color: #536271;
   color: #fff;
 }
 
+/* Sección 2 */
 .temario-container {
   background-color: #2c3d55;
 }
@@ -348,6 +358,7 @@ section:nth-child(even) {
   background-color: #84828f;
 }
 
+/* Sección 3 */
 .card {
   font-size: .9em;
   background-color: #93a2b0;
@@ -357,6 +368,7 @@ section:nth-child(even) {
   border-radius: 1em;
 }
 
+/* Banner */
 .banner-img {
   border-radius: 25%;
   box-shadow: 0.25em 0.5em 1em #536271;

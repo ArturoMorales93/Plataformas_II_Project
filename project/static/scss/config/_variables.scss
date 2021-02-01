@@ -1,4 +1,4 @@
-// Layout
+/* Layout */
 :root {
     --header-height: 3em;
     --footer-height: 3em;
@@ -13,7 +13,7 @@ $dark-color: #2c3d55;
 $font-main-color: #fff;
 $font-second-color: #000;
 
-// Breakpoints
+/* Breakpoints */
 $breakpoints: (
     md: 768px,
     lg: 1024px,

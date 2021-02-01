@@ -38,7 +38,7 @@ section, .header, .footer {
     text-align: center;
 }
 
-// Header
+/* Header */
 .header {
     position: sticky;
     z-index: 1;
@@ -52,7 +52,7 @@ section, .header, .footer {
     height: 100%;
 }
 
-// Baner
+/* Baner */
 section:first-child {
     position: relative;
 }
@@ -68,7 +68,7 @@ section:first-child {
 }
 
 .main-banner {
-    height: 25vh;
+    height: 10em;
     display: flex;
 
     @include media(md) {
@@ -76,9 +76,12 @@ section:first-child {
     }
 }
 
+.main-banner div {
+    flex-grow: 1;
+}
+
 .banner-title {
     align-self: center;
-    // justify-content: center;
     
     h1 {
         margin: 0;
@@ -87,21 +90,15 @@ section:first-child {
 
 .img-banner-container {
     display: none;
-
+    
     @include media(md) {
-        display: block;
+        display: flex;
         width: 50%;
         justify-content: center;
     }
 }
 
-.main-banner div {
-    display: flex;
-    flex-grow: 1;
-}
-
 .banner-img {
-    display: none;
 
     @include media(md) {
         display: block;
@@ -111,7 +108,7 @@ section:first-child {
     }
 }
 
-// Main
+/* Main */
 .home-grid-container {
 
     @include media(md) {
@@ -121,7 +118,7 @@ section:first-child {
     }
 }
 
-// Sección 2
+/* Sección 2 */
 .home-article {
 
     p {
@@ -162,7 +159,7 @@ section:first-child {
     }
 }
 
-// Sección 3
+/* Sección 3 */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -197,7 +194,7 @@ section:first-child {
     height: 100%;
 }
 
-// Footer
+/* Footer */
 .footer {
     display: flex;
     align-items: center;
