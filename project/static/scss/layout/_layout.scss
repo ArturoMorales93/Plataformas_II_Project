@@ -2,8 +2,13 @@ body {
     display: grid;
     grid-template-rows: var(--header-height) 1fr var(--footer-height);
 
-    @include media(md) {
+    @include media(lg) {
         --header-height: 3.5em;
+    }
+
+    @include media(xxl) {
+        --header-height: 4em;
+        --footer-height: 3.5em;
     }
 }
 
@@ -13,6 +18,10 @@ section {
     @include media(md) {
         padding: 2em var(--body-padding);
     }
+
+    @include media(xxl) {
+        padding: 5em var(--body-padding);
+    }
 }
 
 .header, .footer {
@@ -20,8 +29,12 @@ section {
 }
 
 section, .header, .footer {
-    @include media(md) {
+    @include media(xl) {
         --body-padding: 10em;
+    }
+
+    @include media(xxl) {
+        --body-padding: 15em;
     }
 }
 
@@ -29,8 +42,12 @@ section, .header, .footer {
     padding-left: var(--side-padding);
     padding-right: var(--side-padding);
 
-    @include media(md) {
+    @include media(lg) {
         --side-padding: 3em;
+    }
+
+    @include media(xxl) {
+        --side-padding: 5em;
     }
 }
 
@@ -58,6 +75,7 @@ section:first-child {
 }
 
 .banner-bg {
+    width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
@@ -71,8 +89,12 @@ section:first-child {
     height: 10em;
     display: flex;
 
-    @include media(md) {
-        height: 50vh;
+    @include media(lg) {
+        height: 15em;
+    }
+
+    @include media(xl) {
+        height: 20em;
     }
 }
 
@@ -90,8 +112,9 @@ section:first-child {
 
 .img-banner-container {
     display: none;
-    
-    @include media(md) {
+
+    /* Verificar que en el JS sea la misma media query */
+    @include media(lg) {
         display: flex;
         width: 50%;
         justify-content: center;
@@ -100,11 +123,14 @@ section:first-child {
 
 .banner-img {
 
-    @include media(md) {
-        display: block;
+    /* Verificar que en el JS sea la misma media query */
+    @include media(lg) {
         align-self: center;
-        width: 75%;
         max-width: 75%;
+    }
+
+    @include media(xxl) {
+        align-self: initial;
     }
 }
 
@@ -172,7 +198,7 @@ section:first-child {
     margin-bottom: 2em;
     max-width: 225px;
 
-    @include media(md) {
+    @include media(lg) {
         max-width: 200px;
     }
 
