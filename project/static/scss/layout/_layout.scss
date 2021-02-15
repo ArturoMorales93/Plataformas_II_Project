@@ -179,6 +179,8 @@ section:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    overflow-wrap: break-word;
 }
 
 /* Sección 3 */
@@ -225,4 +227,43 @@ section:first-child {
     p {
         margin: 0;
     }
+}
+
+/* Others */
+.author {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    
+    @include media(md) {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    p {
+        font-size: .8em;
+        margin-bottom: .2em;
+    }   
+}
+
+.author-img-container {
+    height: 3em;
+    width: 3em;
+    shape-outside: circle(1.5em);
+    margin-bottom: .5em;
+
+    @include media(md) {
+        margin-right: 1em;
+    }
+}
+
+.author-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    clip-path: circle(1.5em);
+}
+
+.author-nombre {
+    font-weight: bold;
 }
