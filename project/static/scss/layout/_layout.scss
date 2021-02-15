@@ -230,6 +230,28 @@ section:first-child {
 }
 
 /* Others */
+.section-article {
+    @include media(md) {
+        --body-padding: 10em;
+    }
+
+    @include media(lg) {
+        --body-padding: 15em;
+    }
+
+    @include media(xl) {
+        --body-padding: 20em;
+    }
+
+    @include media(xxl) {
+        --body-padding: 25em;
+    }
+
+    section {
+        padding: initial;
+    }
+}
+
 .author {
     display: flex;
     flex-direction: column;
