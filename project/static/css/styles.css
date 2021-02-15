@@ -54,6 +54,7 @@ ul {
   list-style: none;
 }
 
+/* General */
 body {
   display: grid;
   grid-template-rows: var(--header-height) 1fr var(--footer-height);
@@ -185,7 +186,6 @@ section:first-child {
 }
 
 .img-banner-container {
-  display: none;
   /* Verificar que en el JS sea la misma media query */
 }
 
@@ -245,19 +245,15 @@ section:first-child {
 
 .temario-item {
   flex-grow: 1;
-  padding-top: .25em;
-  padding-bottom: .25em;
-}
-
-.temario-item:first-child {
+  min-height: 2.25em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.temario-item a {
-  display: block;
+.temario-link {
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,7 +273,7 @@ section:first-child {
   max-width: 225px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .card {
     max-width: 200px;
   }
@@ -382,6 +378,12 @@ section:nth-child(even) {
   color: #EDF0F5;
 }
 
+/* Banner */
+.banner-img {
+  border-radius: 25%;
+  box-shadow: 0.25em 0.5em 1em #003355;
+}
+
 /* Sección 2 */
 .temario-container {
   background-color: #003355;
@@ -396,7 +398,7 @@ section:nth-child(even) {
   font-weight: bold;
 }
 
-.temario-item:not(.temario-item:first-child):hover {
+.temario-link:hover {
   background-color: #EDF0F5;
   color: #333333;
 }
@@ -410,12 +412,6 @@ section:nth-child(even) {
 
 .card img {
   border-radius: 1em;
-}
-
-/* Banner */
-.banner-img {
-  border-radius: 25%;
-  box-shadow: 0.25em 0.5em 1em #003355;
 }
 
 /*# sourceMappingURL=styles.css.map */

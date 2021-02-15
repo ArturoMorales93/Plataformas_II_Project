@@ -67,6 +67,12 @@ section:nth-child(even) {
     color: $font-main-color;
 }
 
+/* Banner */
+.banner-img {
+    border-radius: 25%;
+    box-shadow: .25em .5em 1em $bg-main-color;
+}
+
 /* Sección 2 */
 .temario-container {
     background-color: $bg-main-color;
@@ -79,11 +85,11 @@ section:nth-child(even) {
         font-size: 1.25em;
         font-weight: bold;
     }
+}
 
-    &:not(&:first-child):hover {
-        background-color: $font-main-color;
-        color: $font-second-color;
-    }
+.temario-link:hover {
+    background-color: $font-main-color;
+    color: $font-second-color;
 }
 
 /* Sección 3 */
@@ -95,10 +101,4 @@ section:nth-child(even) {
     img {
         border-radius: 1em;
     }
-}
-
-/* Banner */
-.banner-img {
-    border-radius: 25%;
-    box-shadow: .25em .5em 1em $bg-main-color;
 }
