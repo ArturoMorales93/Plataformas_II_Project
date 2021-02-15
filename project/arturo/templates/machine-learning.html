@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<section class="section-article">
+    <h1 class="text-center">{{ title }}</h1>
+    <div class="author">
+        <div class="author-img-container">
+            <img class="author-img" src="/static/img/Ayuwoki.jpg" alt="">
+        </div>
+        <div>
+            <p class="author-nombre">Por Arturo Morales</p>
+            <p>15 de febrero de 2021</p>
+        </div>
+    </div>
+
+    <section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis laudantium quas provident voluptatibus
+            modi ipsa exercitationem ab fugiat deleniti nobis illum similique, possimus vel suscipit! Aspernatur ab est
+            deserunt consequuntur?</p>
+    </section>
+</section>
+{% endblock %}
