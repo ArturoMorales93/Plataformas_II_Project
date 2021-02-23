@@ -1,16 +1,19 @@
 {% extends "base.html" %}
 
 {% block title %}
-    Inicio
+Inicio
 {% endblock %}
 
 {% block content %}
 <!-- Banner -->
 <section>
-    <img src="static/img/banner-bg.jpg" alt="Teamwork" class="banner-bg">
+    <!-- <img src="static/img/banner-bg.jpg" alt="Teamwork" class="banner-bg"> -->
     <div class="main-banner">
         <div class="banner-title">
-            <h1 class="text-center">Blog | Foro de Tecnología</h1>
+            <h1>TechnoRevista</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem optio sequi nobis accusamus,
+                recusandae earum nemo quae labore commodi. Odio, velit expedita? Minima repellat nemo repellendus in
+                esse nostrum voluptatum!</p>
         </div>
         <div class="img-banner-container" id="imgBannerContainer">
         </div>
@@ -19,7 +22,7 @@
 <!-- Sección 2 -->
 <section>
     <div class="home-grid-container">
-        <div class="text-center">
+        <div>
             <article class="side-padding home-article">
                 <h2>Proyecto del curso bla bla bla</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis sint nemo ipsam
@@ -58,7 +61,7 @@
 <section>
     <div class="home-grid-container">
         <div class="text-center">
-            <h2>¿Quiénes somos?</h2>
+            <h2 id="quienesSomos">¿Quiénes somos?</h2>
             <div class="card-container">
                 <div class="card">
                     <img src="static/img/Ayuwoki.jpg" alt="">
@@ -92,11 +95,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div>
-                    <div class="img-utn-container">
-                        <img src="img/utn-logo.png" alt="">
-                    </div>
-                </div> -->
     </div>
 </section>
 {% endblock %}
