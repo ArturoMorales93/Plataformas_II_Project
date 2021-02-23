@@ -111,6 +111,24 @@ section {
   padding: 0 var(--body-padding);
 }
 
+.arrow-up {
+  --length: 1em;
+  --size: 2em;
+  height: var(--size);
+  width: var(--size);
+  position: fixed;
+  bottom: var(--length);
+  right: var(--length);
+}
+
+@media screen and (min-width: 768px) {
+  .arrow-up {
+    --length: 2em;
+    --size: 4em
+    ;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   section, .header, .footer {
     --body-padding: 10em;
@@ -397,6 +415,17 @@ section {
 .footer {
   background-color: #003355;
   border-top: 1px solid rgba(229, 229, 229, 0.22);
+}
+
+.arrow-up {
+  color: transparent;
+  cursor: default;
+  transition: color .25s;
+}
+
+.arrow-up-show {
+  color: rgba(229, 229, 229, 0.22);
+  cursor: pointer;
 }
 
 /* Font */

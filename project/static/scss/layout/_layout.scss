@@ -29,6 +29,23 @@ section {
     padding: 0 var(--body-padding);
 }
 
+.arrow-up {
+    --length: 1em;
+    --size: 2em;
+
+    height: var(--size);
+    width: var(--size);
+
+    position: fixed;
+    bottom: var(--length);
+    right: var(--length);
+
+    @include media(md) {
+        --length: 2em;
+        --size: 4em
+    }
+}
+
 section, .header, .footer {
     @include media(xl) {
         --body-padding: 10em;
