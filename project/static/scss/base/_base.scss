@@ -4,8 +4,22 @@
     box-sizing: border-box;
 }
 
+:root {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-height) + 1em);
+}
+
 body {
     min-height: 100vh;
+    font-size: .9em;
+
+    @include media (md) {
+        font-size: .95em;
+    }
+
+    @include media (lg) {
+        font-size: 1em;
+    }
 }
 
 h1, h2, h3 {

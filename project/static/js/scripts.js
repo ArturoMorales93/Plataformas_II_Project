@@ -2,7 +2,31 @@
 const   mediumBp = matchMedia('(min-width: 768px)'),
         largeBp = matchMedia('(min-width: 1024px)'),
         xlargeBp = matchMedia('(min-width: 1200px)')
-        xlargxxlargeBpeBp = matchMedia('(min-width: 1200px)')
+        xxlargeBp = matchMedia('(min-width: 1200px)')
+
+// arroUpButton
+const arroUpButton = document.getElementById('arroUpButton')
+
+// Header
+const header = document.getElementById('header')
+const navbar = document.getElementById('navbar')
+const iconContainer = document.getElementById('iconContainer')
+
+const changeNavbar = () => {
+    if (scrollY > 0) {
+        arroUpButton.classList.add('arrow-up-show')
+        header.classList.add('header-scrolled')
+        navbar.classList.remove('navbar-dark')
+        navbar.classList.add('navbar-light')
+    } else {
+        arroUpButton.classList.remove('arrow-up-show')
+        header.classList.remove('header-scrolled')
+        navbar.classList.remove('navbar-light')
+        navbar.classList.add('navbar-dark')
+    }
+}
+
+document.addEventListener('scroll', changeNavbar)
 
 // Banner
 const imgBannerContainer = document.getElementById('imgBannerContainer')
