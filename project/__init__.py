@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_googletrans import translator
 
 from .index import index
 from .dixiana import dixiana
@@ -9,6 +10,8 @@ from .carlos import carlos
 
 app = Flask(__name__)
 app.config.from_pyfile('config/config.cfg')
+ts = translator(app=app, cache=True, fail_safe=False, service_urls=['translate.googleapis.com','translate.google.com','translate.google.co.kr'])
+
 app.register_blueprint(index)
 app.register_blueprint(dixiana)
 app.register_blueprint(efrain)
