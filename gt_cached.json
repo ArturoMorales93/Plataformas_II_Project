@@ -3,5 +3,9 @@
     "Ejemplo de un texto de espa\u00f1o a ingl\u00e9s.": {
         "en": "Example of a text from Spanish to English.",
         "es": "Ejemplo de un texto de espa\u00f1o a ingl\u00e9s."
+    },
+    "Otro ejemplo de un texto de espa\u00f1o a ingl\u00e9s.": {
+        "en": "Another example of a text from Spanish to English.",
+        "es": "Otro ejemplo de un texto de espa\u00f1o a ingl\u00e9s."
     }
 }
