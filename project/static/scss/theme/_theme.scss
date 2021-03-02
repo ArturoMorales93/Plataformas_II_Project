@@ -1,11 +1,12 @@
 .header {
     background-color: $bg-main-color;
+    border-bottom: 0 solid rgba(0, 51, 85, 0.22);
     transition: .25s;
 }
 
 .header-scrolled {
-    border-bottom: none;
-    background-color: rgba(229, 229, 229, 1);
+    background-color: $bg-second-color;
+    border-bottom: 1px solid rgba(0, 51, 85, 0.22);
 }
 
 .footer {
@@ -53,7 +54,7 @@ h1, h2, h3 {
 
 /* Navbar */
 .navbar {
-    border-bottom: 1px solid rgba(229, 229, 229, 0.22);
+    border-bottom: 1px solid rgba(99, 123, 173, 0.22);
 }
 
 .navbar-dark .navbar-nav .nav-link {
