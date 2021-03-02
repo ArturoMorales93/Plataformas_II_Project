@@ -1,11 +1,26 @@
 {
     "": {},
+    "Ejemplo de un texto": {
+        "en": "Example of a text",
+        "es": "Ejemplo de un texto"
+    },
     "Ejemplo de un texto de espa\u00f1o a ingl\u00e9s.": {
         "en": "Example of a text from Spanish to English.",
         "es": "Ejemplo de un texto de espa\u00f1o a ingl\u00e9s."
     },
+    "Nanotecnolog\u00eda": {
+        "en": "Nanotechnology",
+        "es": "Nanotecnolog\u00eda"
+    },
     "Otro ejemplo de un texto de espa\u00f1o a ingl\u00e9s.": {
         "en": "Another example of a text from Spanish to English.",
         "es": "Otro ejemplo de un texto de espa\u00f1o a ingl\u00e9s."
+    },
+    "Robotic Process Automatization": {
+        "en": "Robotic Process Automatization"
+    },
+    "Tecnolog\u00eda 5G": {
+        "en": "5G technology",
+        "es": "Tecnolog\u00eda 5G"
     }
 }
