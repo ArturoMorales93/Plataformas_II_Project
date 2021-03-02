@@ -21,7 +21,7 @@
 }
 
 .arrow-up-show {
-    color: rgba(229, 229, 229, 0.22);
+    color: rgba(128, 128, 128, 0.22);
     cursor: pointer;
 }
 
@@ -156,4 +156,10 @@ section:nth-child(even) {
     img {
         border-radius: 1em;
     }
+}
+
+/* Others */
+.section-article {
+    color: $font-second-color;
+    background-color: #DDE;
 }

@@ -21,7 +21,7 @@ section {
     }
 
     @include media(xxl) {
-        padding: 5em var(--body-padding);
+        padding: 4em var(--body-padding);
     }
 }
 
@@ -34,7 +34,7 @@ section, .header, .footer {
     }
 
     @include media(lg) {
-        --body-padding: 15em;
+        --body-padding: 5em;
     }
     
     @include media(xl) {
@@ -186,6 +186,12 @@ section, .header, .footer {
         
         @include media(md) {
             text-align: initial;
+            padding-right: var(--body-padding);
+        }
+
+        @include media(xxl) {
+            text-align: initial;
+            padding-right: 10em;
         }
     }
 }
@@ -322,4 +328,10 @@ section, .header, .footer {
 
 .author-nombre {
     font-weight: bold;
+}
+
+.instagram-post {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

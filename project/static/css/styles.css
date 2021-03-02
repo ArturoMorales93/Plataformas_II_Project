@@ -43,6 +43,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 1.05em;
+  }
+}
+
 h1, h2, h3 {
   margin-bottom: .5em;
 }
@@ -103,7 +109,7 @@ section {
 
 @media screen and (min-width: 1440px) {
   section {
-    padding: 5em var(--body-padding);
+    padding: 4em var(--body-padding);
   }
 }
 
@@ -119,7 +125,7 @@ section {
 
 @media screen and (min-width: 1024px) {
   section, .header, .footer {
-    --body-padding: 15em;
+    --body-padding: 5em;
   }
 }
 
@@ -275,6 +281,14 @@ section {
 @media screen and (min-width: 768px) {
   .home-article p {
     text-align: initial;
+    padding-right: var(--body-padding);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home-article p {
+    text-align: initial;
+    padding-right: 10em;
   }
 }
 
@@ -424,6 +438,12 @@ section {
   font-weight: bold;
 }
 
+.instagram-post {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   background-color: #003355;
   border-bottom: 0 solid rgba(0, 51, 85, 0.22);
@@ -447,7 +467,7 @@ section {
 }
 
 .arrow-up-show {
-  color: rgba(229, 229, 229, 0.22);
+  color: rgba(128, 128, 128, 0.22);
   cursor: pointer;
 }
 
@@ -584,6 +604,12 @@ section:nth-child(even) {
 
 .card img {
   border-radius: 1em;
+}
+
+/* Others */
+.section-article {
+  color: #333333;
+  background-color: #DDE;
 }
 
 /*# sourceMappingURL=styles.css.map */

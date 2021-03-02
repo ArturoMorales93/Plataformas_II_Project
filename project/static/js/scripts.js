@@ -16,13 +16,13 @@ const changeNavbar = () => {
     if (scrollY > 0) {
         arroUpButton.classList.add('arrow-up-show')
         header.classList.add('header-scrolled')
-        navbar.classList.remove('navbar-dark')
-        navbar.classList.add('navbar-light')
+        // navbar.classList.remove('navbar-dark')
+        // navbar.classList.add('navbar-light')
     } else {
         arroUpButton.classList.remove('arrow-up-show')
         header.classList.remove('header-scrolled')
-        navbar.classList.remove('navbar-light')
-        navbar.classList.add('navbar-dark')
+        // navbar.classList.remove('navbar-light')
+        // navbar.classList.add('navbar-dark')
     }
 }
 
