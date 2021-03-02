@@ -20,6 +20,10 @@ body {
     @include media (lg) {
         font-size: 1em;
     }
+
+    @include media (xxl) {
+        font-size: 1.05em;
+    }
 }
 
 h1, h2, h3 {

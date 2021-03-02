@@ -21,32 +21,22 @@ section {
     }
 
     @include media(xxl) {
-        padding: 5em var(--body-padding);
+        padding: 4em var(--body-padding);
     }
 }
 
 .header, .footer {
     padding: 0 var(--body-padding);
 }
-
-.arrow-up {
-    --length: 1em;
-    --size: 2em;
-
-    height: var(--size);
-    width: var(--size);
-
-    position: fixed;
-    bottom: var(--length);
-    right: var(--length);
-
-    @include media(md) {
-        --length: 2em;
-        --size: 4em
-    }
-}
-
 section, .header, .footer {
+    @include media(md) {
+        --body-padding: 2.5em;
+    }
+
+    @include media(lg) {
+        --body-padding: 5em;
+    }
+    
     @include media(xl) {
         --body-padding: 10em;
     }
@@ -66,6 +56,23 @@ section, .header, .footer {
 
     @include media(xxl) {
         --side-padding: 5em;
+    }
+}
+
+.arrow-up {
+    --length: 1em;
+    --size: 2em;
+
+    height: var(--size);
+    width: var(--size);
+
+    position: fixed;
+    bottom: var(--length);
+    right: var(--length);
+
+    @include media(md) {
+        --length: 2em;
+        --size: 4em
     }
 }
 
@@ -166,11 +173,25 @@ section, .header, .footer {
 /* Sección 2 */
 .home-article {
 
+    h2 {
+        text-align: center;
+
+        @include media(md) {
+            text-align: initial;
+        }
+    }
+
     p {
         text-align: justify;
         
         @include media(md) {
             text-align: initial;
+            padding-right: var(--body-padding);
+        }
+
+        @include media(xxl) {
+            text-align: initial;
+            padding-right: 10em;
         }
     }
 }
@@ -307,4 +328,10 @@ section, .header, .footer {
 
 .author-nombre {
     font-weight: bold;
+}
+
+.instagram-post {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
