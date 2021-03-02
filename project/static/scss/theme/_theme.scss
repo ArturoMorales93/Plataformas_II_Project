@@ -80,7 +80,8 @@ h1, h2, h3 {
 
 .dropdown-menu {
     margin-left: -1em;
-    border: none;    
+    border: none;
+    font-size: inherit;
 
     @include media(md) {
         margin-left: 0;

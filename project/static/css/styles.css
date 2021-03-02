@@ -531,6 +531,7 @@ h1, h2, h3 {
 .dropdown-menu {
   margin-left: -1em;
   border: none;
+  font-size: inherit;
 }
 
 @media screen and (min-width: 768px) {
