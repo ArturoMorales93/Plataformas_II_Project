@@ -1,0 +1,27 @@
+{% extends "en_base.html" %}
+
+{% block title %}
+    {{ translate(text='Robotic Process Automatization', src='en', dest=['en']) }}
+{% endblock %}
+
+{% block content %}
+    <!-- Contenido de la página -->
+    <section class="section-article">
+        <h1 class="text-center">{{ translate(text='Robotic Process Automatization', src='en', dest=['en']) }}</h1>
+        <div class="author">
+            <div class="author-img-container">
+                <img class="author-img" src="/static/img/Ayuwoki.jpg" alt="">
+            </div>
+            <div>
+                <p class="author-nombre">Author: Efraín Araya</p>
+                <p>26 de febrero, 2021</p>
+            </div>
+        </div>
+    
+        <section>
+            <!-- Contenido  -->
+            {{ translate(text='Ejemplo de un texto', src='es', dest=['en']) }}
+            
+        </section>
+    </section>
+{% endblock %}
