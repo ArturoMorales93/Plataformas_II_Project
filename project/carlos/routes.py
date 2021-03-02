@@ -3,6 +3,7 @@ from . import carlos
 
 
 @carlos.route('/es/iot', methods=['GET'])
+@carlos.route('/iot', methods=['GET'])
 def iot_es():
     return render_template('es_iot.html')
 

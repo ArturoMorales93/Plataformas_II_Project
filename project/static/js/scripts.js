@@ -33,7 +33,7 @@ const imgBannerContainer = document.getElementById('imgBannerContainer')
 
 const showBannerImg = media => {
     if (media.matches) {
-        imgBannerContainer.innerHTML = `<img class="banner-img" src="static/img/banner-img.jpg" alt="CPU">`
+        imgBannerContainer.innerHTML = `<img class="banner-img" src="/static/img/banner-img.jpg" alt="CPU">`
     } else {
         imgBannerContainer.innerHTML = " "
     }
