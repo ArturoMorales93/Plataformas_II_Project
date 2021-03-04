@@ -438,10 +438,43 @@ section {
   font-weight: bold;
 }
 
-.instagram-post {
-  width: 100%;
+.youtube-video, .instagram-post {
   display: flex;
   justify-content: center;
+  margin-bottom: 1em;
+}
+
+.youtube-video iframe {
+  height: auto;
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .youtube-video iframe {
+    height: 315px;
+    width: 560px;
+  }
+}
+
+.instagram-post {
+  width: 100%;
+}
+
+.instagram-post blockquote {
+  max-width: 100%;
+}
+
+.article-banner {
+  height: 15em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .article-banner {
+    height: 20em;
+  }
 }
 
 .header {
@@ -507,13 +540,16 @@ h1, h2, h3 {
   color: #333333;
 }
 
-.navbar-dark .navbar-nav .nav-link:focus {
-  color: #637BAD;
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #000;
 }
 
 @media screen and (min-width: 768px) {
   .navbar-dark .navbar-nav .nav-link {
     color: #EDF0F5;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active, .navbar-dark .navbar-nav .nav-link:focus {
+    color: #BBB;
   }
 }
 
@@ -611,6 +647,11 @@ section:nth-child(even) {
 .section-article {
   color: #333333;
   background-color: #DDE;
+}
+
+.section-article section {
+  color: inherit;
+  background-color: inherit;
 }
 
 /*# sourceMappingURL=styles.css.map */

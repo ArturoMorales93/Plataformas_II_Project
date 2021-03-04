@@ -330,8 +330,40 @@ section, .header, .footer {
     font-weight: bold;
 }
 
-.instagram-post {
-    width: 100%;
+.youtube-video, .instagram-post {
     display: flex;
     justify-content: center;
+    margin-bottom: 1em;
+}
+
+.youtube-video {
+
+    iframe {
+        height: auto;
+        width: auto;
+
+        @include media(md) {
+            height: 315px;
+            width: 560px;
+        }
+    }
+}
+
+.instagram-post {
+    width: 100%;
+
+    blockquote {
+        max-width: 100%;
+    }
+}
+
+.article-banner {
+    height: 15em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+
+    @include media(md) {
+        height: 20em;
+    }
 }
