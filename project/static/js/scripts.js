@@ -1,6 +1,3 @@
-//Prueba
-const html = document.getElementById('html').scrollIntoView("smooth")
-
 // Breakpoinst
 const   mediumBp = matchMedia('(min-width: 768px)'),
         largeBp = matchMedia('(min-width: 1024px)'),
