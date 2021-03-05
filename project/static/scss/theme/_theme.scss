@@ -60,12 +60,16 @@ h1, h2, h3 {
 .navbar-dark .navbar-nav .nav-link {
     color: $font-second-color;
 
-    &:focus {
-        color: $bg-second-color;
+    &:hover, &:active, &:focus {
+        color: #000;
     }
 
     @include media(md) {
         color: $font-main-color;
+
+        &:hover, &:active, &:focus {
+            color: #BBB;
+        }
     }
 }
 
@@ -163,4 +167,9 @@ section:nth-child(even) {
 .section-article {
     color: $font-second-color;
     background-color: #DDE;
+
+    section {
+        color: inherit;
+        background-color: inherit;
+    }
 }
