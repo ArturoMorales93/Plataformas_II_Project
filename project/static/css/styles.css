@@ -303,7 +303,7 @@ div .card-container {
   justify-content: center;
 }
 
-.card {
+div .card {
   padding: .5em 1em;
   height: 100px;
   width: 150px;
@@ -313,18 +313,18 @@ div .card-container {
 }
 
 @media screen and (min-width: 1024px) {
-  .card {
+  div .card {
     height: 150px;
     width: 250px;
     padding: 1em 1.5em;
   }
 }
 
-.card h3 {
+div .card h3 {
   margin-bottom: 0;
 }
 
-.card p {
+div .card p {
   text-align: center;
 }
 
