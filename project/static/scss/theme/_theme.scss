@@ -101,20 +101,112 @@ section:nth-child(even) {
 /* Banner */
 .banner-img {
     border-radius: 25%;
-    box-shadow: .25em .5em 1em $bg-main-color;
 }
 
 /* Sección 2 */
 
 /* Sección 3 */
-.card {
-    font-size: .9em;
-    background-color: $bg-second-color;
-    color: $font-main-color;
-    border-radius: 1em;
+.card-container {
+    --time: .5s;
 
-    img {
+    a {
         border-radius: 1em;
+    }
+
+    & a:nth-child(1) {
+        background-color: #7d3865;
+    }
+
+    & a:nth-child(2) {
+        background-color: #c1a7b0;
+    }
+    
+    & a:nth-child(3) {        
+        background-color: darken($color: #f8b703, $amount: 5);
+    }
+    
+    & a:nth-child(4) {
+        background-color: #949217;
+    }
+    
+    & a:nth-child(5) {
+        background-color: #0fa2a9;
+    }
+}
+
+.card {
+    --time: .5s;
+    font-size: .9em;
+    border-radius: 1em;
+    background-color: inherit;
+    color: $font-main-color;
+    overflow: hidden;
+    transition: var(--time);
+
+    h3 {
+        font-size: 1.25em;
+        position: absolute;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        transition: var(--time);
+
+        @include media(lg) {
+            font-size: 1.75em;
+        }
+    }
+
+    p {
+        position: absolute;
+        top: 100%;
+        transition: var(--time);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+        left: 0;
+        top: 0;
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
+    }
+
+    &:hover::after {
+        animation: bordes var(--time) forwards;
+    }
+
+    &:hover {
+        transform: scale(1.05);        
+
+        @keyframes bordes {
+            35% {
+                clip-path: polygon(0 0, 100% 0, 100% 1px, 0 1px, 0 1px);
+            }
+
+            50% {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 1px, 0 1px);
+            }
+
+            85% {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10% 100%);
+            }
+
+            100% {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+            }
+        }
+
+        h3 {
+            font-size: 1.5em;
+            top: 1em;
+            transform: translate3d(0, 0, 0);
+        }
+
+        p {
+            top: 4em;
+        }
     }
 }
 
