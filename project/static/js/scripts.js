@@ -16,35 +16,31 @@ const changeNavbar = () => {
     if (scrollY > 0) {
         arroUpButton.classList.add('arrow-up-show')
         header.classList.add('header-scrolled')
-        // navbar.classList.remove('navbar-dark')
-        // navbar.classList.add('navbar-light')
     } else {
         arroUpButton.classList.remove('arrow-up-show')
         header.classList.remove('header-scrolled')
-        // navbar.classList.remove('navbar-light')
-        // navbar.classList.add('navbar-dark')
     }
 }
 
 document.addEventListener('scroll', changeNavbar)
 
 // Banner
-const imgBannerContainer = document.getElementById('imgBannerContainer')
+// const imgBannerContainer = document.getElementById('imgBannerContainer')
 
-const showBannerImg = media => {
-    if (media.matches) {
-        imgBannerContainer.innerHTML = `<img class="banner-img" src="/static/img/banner-img.jpg" alt="CPU">`
-    } else {
-        imgBannerContainer.innerHTML = " "
-    }
-}
+// const showBannerImg = media => {
+//     if (media.matches) {
+//         imgBannerContainer.innerHTML = `<img class="banner-img" src="/static/img/banner-img.jpg" alt="CPU">`
+//     } else {
+//         imgBannerContainer.innerHTML = " "
+//     }
+// }
 
-if (imgBannerContainer) {
+// if (imgBannerContainer) {
     
-    /* Verificar que en el Sass sea la misma media query */
-    showBannerImg(largeBp)
-    largeBp.addListener(showBannerImg)
-    xlargeBp.addListener(showBannerImg)
-    xxlargeBp.addListener(showBannerImg)
+//     /* Verificar que en el Sass sea la misma media query */
+//     showBannerImg(largeBp)
+//     largeBp.addListener(showBannerImg)
+//     xlargeBp.addListener(showBannerImg)
+//     xxlargeBp.addListener(showBannerImg)
 
-}
+// }
