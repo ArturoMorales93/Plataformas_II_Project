@@ -296,10 +296,10 @@ section {
 }
 
 /* Sección 3 */
-.card-container {
+div .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em !important;
+  gap: 1em;
   justify-content: center;
 }
 
