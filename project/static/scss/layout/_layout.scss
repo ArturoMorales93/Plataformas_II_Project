@@ -179,14 +179,14 @@ section, .header, .footer {
 }
 
 /* Sección 3 */
-.card-container {
+div .card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1em !important;
     justify-content: center;
 }
 
-.card {
+div .card {
     padding: .5em 1em;
     height: 100px;
     width: 150px;
