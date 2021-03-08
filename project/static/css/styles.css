@@ -330,14 +330,32 @@ section {
 }
 
 /* Footer */
-.footer {
+.footer-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.footer p {
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
+}
+
+.footer-container p {
   margin: 0;
+}
+
+.footer-container > span {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container > span {
+    display: block;
+    margin: 0 .5em;
+  }
 }
 
 /* Others */
@@ -446,6 +464,12 @@ div[class*="post"] {
 .footer {
   background-color: #003355;
   border-top: 1px solid rgba(229, 229, 229, 0.22);
+}
+
+.footer svg {
+  margin-left: .25em;
+  height: 1.25em;
+  width: 1.25em;
 }
 
 .arrow-up {
@@ -681,6 +705,10 @@ section:nth-child(even) {
   background-size: contain;
   width: 1.25em;
   margin-left: .5em;
+}
+
+.repository-link {
+  font-size: 1.25em;
 }
 
 /*# sourceMappingURL=styles.css.map */
