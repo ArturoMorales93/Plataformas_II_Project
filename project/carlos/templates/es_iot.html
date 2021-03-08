@@ -1,27 +1,80 @@
 {% extends "es_base.html" %}
 
 {% block title %}
-    Internet of Things
+Internet of Things
 {% endblock %}
 
 {% block content %}
-<section class="section-article">
+<div class="section-article">
     <h1 class="text-center">Internet of Things</h1>
-    <div class="author">
+    <div class="author m-5">
         <div>
-            <p class="author-nombre">Autor: Carlos Mairena</p>
-            <p>26 de febrero, 2021</p>
+            <p class="author-nombre"> Autor: Carlos Mairena</p>
+            <p>8 de marzo, 2021</p>
             <a href="/en/iot">Read in English</a>
         </div>
     </div>
 
-    <section>
-        <p>Otro ejemplo de un texto de españo a inglés.</p>
-        <p>Ejemplo de un texto de españo a inglés</p>
-        <p>Ejemplo de un texto de españo a inglés</p>
-        <p>Ejemplo de un texto de españo a inglés</p>
-        <p>Ejemplo de un texto de españo a inglés</p>
-        
-    </section>
-</section>
+    <div class="col-sm-10 col-md-6 mx-auto">
+        <div class="iot-img-container">
+            <img src="/static/img/iot/iot-photo.jpg" alt="Imagen ilustrativa" class="iot-img">
+        </div>
+
+        <h2>
+            ¿Por qué el Internet de las cosas?
+        </h2>
+
+        <p>
+            Más allá del sensacionalismo y todo lo que se ha criticado con respecto al internet de las cosas, la
+            humanidad está utilizando la tecnología como parte de su diario, con solo mencionar los smartphones que
+            también son dispositivos IOT, el cual estos ya poseen la capacidad de interactuar de manera automática con
+            otros dispositivos, como por ejemplo controlar sensores del hogar, monitorear el estado de un vehículo y con
+            asistentes de voz que utilizan la inteligencia artificial para reconocer nuestras palabras.
+        </p>
+
+        <p>
+            Ahora que se tiene como ejemplo el uso de los smartphones, también están otros dispositivos similares como
+            son las pulseras que son muy populares para monitorear algunas partes del cuerpo humano, también las
+            pulseras se están utilizando ahora como medio de pago gracias a que se pueden conectar con una entidad
+            bancaria.
+        </p>
+
+        <p>
+            En la industria de los automóviles se ha utilizado para ofrecer funciones avanzadas como el mencionado
+            "piloto automático" de muchas compañías como TESLA. También mencionar que el IOT complementada
+            con otra área como el Machine Learning dan aún más soluciones casi que imposibles o muy difíciles de 
+            conseguir hace menos de 5 años.
+        </p>
+        <hr>
+
+        <h3>
+            ¿Cómo funciona el Internet de las Cosas?
+        </h3>
+        <iframe width="100%" height="480px" src="https://www.youtube.com/embed/QSIPNhOiMoE" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <p>
+            En resumen, el IOT no tiene un concepto como tal, pero sigue la filosofía de conectar cualquier cosa a internet, desde ropa, accesorios,
+            electrodomésticos, muebles, automóviles, etc. La necesidad de hacer esto, como se mostró en el video, es lograr 
+            hacer aquellas tareas que pudieran ser imposibles de realizar.
+        </p>
+
+        <p>
+            Básicamente estos dispositivos contienen un pequeño circuito que contiene muy pocos recursos específicos
+            para realizar sus funciones. Entre esos recursos posee un microcontrolador que es el encargado de realizar
+            las operaciones principales como recolectar y enviar datos que reúne de sensores, estos sensores pueden 
+            ser de temperatura, humedad, movimiento, etc.
+        </p>
+
+        <hr>
+        <h3>
+            ¿Qué necesito para crear mi dispositivo del IOT?
+        </h3>
+    
+        <img src="/static/img/iot/arduino.jpg" alt="Imagen ilustrativa" class="iot-img mb-4">
+
+    </div>
+</div>
 {% endblock %}
