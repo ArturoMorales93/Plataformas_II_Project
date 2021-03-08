@@ -1,0 +1,114 @@
+{% extends "en_base.html" %}
+
+{% block title %}
+    {{ translate(text='Tecnología 5G', src='es', dest=['en']) }}
+{% endblock %}
+
+{% block content %}
+    <!-- Contenido de la página -->
+    <section class="section-article">
+        <h1 class="text-center">{{ translate(text='Tecnología 5G', src='es', dest=['en']) }}</h1>
+        <p>{{ translate(text='"El 5G puede estar más cerca y accesible de lo que se piensa, con esta nueva tecnología se lograría
+            reducir un mínimo de latencia que esto equivale al tiempo de carga en una web, también aumentará la
+            velocidad de conexión y el número de dispositivos conectados incrementaría, básicamente se estará conectado
+            a todo, todo el tiempo y mucho más rápido que en la actualidad."', src='es', dest=['en']) }}</p>
+        <div class="article-banner">
+            <img src="/static/img/dixiana/banner.jpeg" alt="Banner 5G">
+        </div>
+        <div class="author">
+            <div>
+                <p class="author-nombre">Autor: Dixiana Gómez</p>
+                <p>26 de febrero, 2021</p>
+            </div>
+        </div>
+    
+        <section>
+            <h2>{{ translate(text='¿Qué es 5G?', src='es', dest=['en']) }}</h2>
+            <p>{{ translate(text='5G es la quinta generación de tecnología celular. Está diseñada para aumentar la velocidad, reducir la
+                latencia y mejorar la flexibilidad de los servicios inalámbricos. La tecnología 5G ofrece una velocidad
+                máxima teórica de 20 Gbps, mientras que la velocidad máxima de la tecnología 4G es solo de 1 Gbps. 5G
+                también ofrece menor latencia, lo que puede mejorar el rendimiento de las aplicaciones comerciales y de
+                otras experiencias digitales (como juegos en línea, videoconferencias y automóviles con piloto automático).
+                (Cisco)', src='es', dest=['en']) }}</p>
+    
+            <p>{{ translate(text='Esta tecnología pretende ofrecer múltiples cambios comparada con las demás generaciones de tecnología celular
+                como lo es el 4G, las diferencias son muy grandes e importantes, que en la actualidad se notará demasiado el
+                avance.', src='es', dest=['en']) }}</p>
+    
+            <h2>{{ translate(text='Objetivo de la red 5G', src='es', dest=['en']) }}</h2>
+            <p>{{ translate(text='Esta generación de comunicaciones móviles, aparte de mejorar y brindar mayores servicios, busca conseguir más
+                velocidad en la transmisión de datos. También posibilita un ecosistema capaz de entregar eficientemente
+                servicios inalámbricos entre máquinas, cosas y personas revolucionando en todo sentido la forma de
+                comunicarnos mediante conexiones fiables, eficientes y eficaces. (Batista Fuentes & Díaz Ibáñez, 2019)', src='es', dest=['en']) }}</p>
+    
+            <hr>
+            <div class="post">
+                <figure>
+                    <img src="/static/img/dixiana/historia5G.jpeg" alt="">
+                </figure>
+            </div>
+            <p>{{ translate(text='Para entender un poco más sobre el 5G, se debe de conocer sobre la historia y evolución, a continuación, se
+                muestra un resumen sobre la historia hasta el momento:', src='es', dest=['en']) }}</p>
+            <h3>G1</h3>
+            <p>{{ translate(text='Se dio a finales de los años 70 y 80 donde este último año se popularizó. Permitió la llegada de los
+                teléfonos celulares al mercado mundial.', src='es', dest=['en']) }}</p>
+            <h3>G2</h3>
+            <p>{{ translate(text='Esta generación abrió paso a los móviles digitales, donde se plasmó la idea de teléfonos inteligentes como
+                una realidad, ofreciendo a los consumidores más funciones que simplemente llamadas donde el producto
+                estrella fueron los SMS (Mensajes de texto).', src='es', dest=['en']) }}</p>
+            <h3>G3</h3>
+            <p>{{ translate(text='La velocidad de conexión aumentó considerablemente, pasando un aproximado de 64 Kilobytes por segundo a 4
+                Megabytes por segundo, donde se abrieron muchas más funciones que se pueden realizar, por ejemplo, descarga
+                de aplicaciones y archivos, video conferencias desde el móvil, streaming de videos y música, entre otras
+                funciones.', src='es', dest=['en']) }}</p>
+            <h3>G4</h3>
+            <p>{{ translate(text='Es lo que se logra ver hasta el momento, logrando un gran cambio en comparación con el 3G, obteniendo
+                velocidades de 100 Mbps donde se pueden reproducir videos con resolución de hasta Ultra HD o 4K y acelerar
+                tareas en la nube.', src='es', dest=['en']) }}</p>
+            <h3>G5</h3>
+            <p>{{ translate(text='Se conoce que esta tecnología ya está siendo implementada en algunos de los países desde el 2019 como por
+                ejemplo Corea del Sur, Reino Unido, Italia; pero aún queda camino por recorrer para que esta tecnología
+                llegue alrededor del mundo, donde sea más accesible de manera comercial.', src='es', dest=['en']) }}</p>
+            <hr>
+    
+            <h2>{{ translate(text='Ventajas y desventajas', src='es', dest=['en']) }}</h2>
+            <div class="post">
+                <figure>
+                    <img src="/static/img/dixiana/5G.jpeg" alt="">
+                </figure>
+            </div>
+            <h3>{{ translate(text='Ventajas', src='es', dest=['en']) }}</h3>
+            <ol>
+                <li>{{ translate(text='El rendimiento en la transferencia de datos aumentaría consiguiendo obtener unos 10Gbps de downlink(o
+                    sea, 10gigabits por segundo en conexión de bajada).', src='es', dest=['en']) }}</li>
+                <li>{{ translate(text='Se consigue obtener menor latencia entre uno y cinco milisegundos de transmisión, muy buenas noticias
+                    para las transmisiones en vivo, video llamadas y tiempo de respuesta de una página web.', src='es', dest=['en']) }}</li>
+                <li>{{ translate(text='Compatible con tecnología que maneja el internet de las cosas o IoT, conectando dispositivos
+                    inteligentes, cómo, por ejemplo, aparatos que utilizar realidad aumentada.', src='es', dest=['en']) }} </li>
+                <li>{{ translate(text='Mayor número de dispositivos conectados al mismo tiempo.', src='es', dest=['en']) }} </li>
+                <li>{{ translate(text='Promete garantizar mayor cobertura llegando al 100%.', src='es', dest=['en']) }} </li>
+                <li>{{ translate(text='Un 90% menos en consumo de energía.', src='es', dest=['en']) }} </li>
+            </ol>
+            <h3>{{ translate(text='Desventajas', src='es', dest=['en']) }} </h3>
+            <ol>
+                <li>{{ translate(text='Se tendrá que recurrir al cambio de dispositivos, ya que, no todos son compatibles con el 5G.', src='es', dest=['en']) }} </li>
+                <li>{{ translate(text='Para utilizar o desplegar el 5G resulta costoso con respecto a infraestructura, es muy difícil de
+                    comercializar por esta razón.', src='es', dest=['en']) }} </li>
+            </ol>
+            <hr>
+            <p>{{ translate(text='Por otro lado, algunas de las ventajas que menciona Mena (2020): <br>
+                Habrá mayor eficiencia de energía de la red, las antenas van a consumir menos potencia, lo que genera un
+                ahorro de energía de hasta 100 veces en una estación base. Las baterías de los celulares tendrán una
+                eficiencia de energía de hasta 100 veces más que la actual.', src='es', dest=['en']) }} 
+            </p>
+            <p>{{ translate(text='Este punto antes mencionado, trae múltiples beneficios, en la actualidad, dependiendo del dispositivo y su
+                marca, el consumo de datos también afecta la batería del móvil, por lo cual resulta muy beneficioso
+                considerando que se puede utilizar por más tiempo el dispositivo sin que este se descargue.', src='es', dest=['en']) }} </p>
+            <p>{{ translate(text='Una desventaja del 5G que menciona Mena (2020) es que, “El 5G al utilizar frecuencias de radio más alta,
+                tendrá un rango de cobertura menor, por tanto los operadores necesitarán instalar más nodos (antenas) en el
+                país, lo que tomará más tiempo para dar cobertura total”. Al tener la necesidad de instalar más antenas
+                alrededor de todo el territorio del país esto generará muchos gastos adicionales que no todo gobierno tiene
+                presupuesto para tal acción, por lo cual resulta una desventaja gigante para aquellos países que no cuentan
+                con dichos recursos. (Mena, 2020)', src='es', dest=['en']) }} </p>
+        </section>
+{% endblock %}
