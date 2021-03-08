@@ -289,3 +289,18 @@ div[class*="post"] {
         height: 20em;
     }
 }
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.person {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.person-name {
+    margin-bottom: .25em;
+}
