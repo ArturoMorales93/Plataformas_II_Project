@@ -163,49 +163,56 @@ section:nth-child(even) {
     }
 
     &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 1px solid #fff;
-        left: 0;
-        top: 0;
-        clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
+
+        @include media(lg) {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #fff;
+            left: 0;
+            top: 0;
+            clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
+        }
     }
 
     &:hover::after {
-        animation: bordes var(--time) forwards;
+        @include media(lg) {
+            animation: bordes var(--time) forwards;
+        }
     }
 
     &:hover {
-        transform: scale(1.05);        
+        @include media(lg){
+            transform: scale(1.05);        
 
-        @keyframes bordes {
-            35% {
-                clip-path: polygon(0 0, 100% 0, 100% 1px, 0 1px, 0 1px);
+            @keyframes bordes {
+                35% {
+                    clip-path: polygon(0 0, 100% 0, 100% 1px, 0 1px, 0 1px);
+                }
+    
+                50% {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 1px, 0 1px);
+                }
+    
+                85% {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10% 100%);
+                }
+    
+                100% {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+                }
             }
-
-            50% {
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 1px, 0 1px);
+    
+            h3 {
+                transform: translate3d(0, -150%, 0);
             }
-
-            85% {
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10% 100%);
+    
+            p {
+                transform: translate3d(0, 50%, 0);;
             }
-
-            100% {
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
-            }
-        }
-
-        h3 {
-            transform: translate3d(0, -150%, 0);
-        }
-
-        p {
-            transform: translate3d(0, 50%, 0);;
-        }
+        }        
     }
 }
 
@@ -218,4 +225,8 @@ section:nth-child(even) {
         color: inherit;
         background-color: inherit;
     }
+}
+
+.author-nombre {
+    font-weight: bold;
 }
