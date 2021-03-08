@@ -392,7 +392,6 @@ section {
 }
 
 .author p {
-  font-size: .8em;
   margin-bottom: .2em;
 }
 
@@ -682,6 +681,16 @@ section:nth-child(even) {
 .section-article section {
   color: inherit;
   background-color: inherit;
+}
+
+.author {
+  font-size: .85em;
+}
+
+.author a {
+  display: block;
+  margin-top: 2em;
+  color: #637BAD;
 }
 
 .author-nombre {

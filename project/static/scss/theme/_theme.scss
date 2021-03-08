@@ -234,6 +234,16 @@ section:nth-child(even) {
     }
 }
 
+.author {
+    font-size: .85em;
+
+    a{
+        display: block;
+        margin-top: 2em;
+        color: $bg-second-color;
+    }
+}
+
 .author-nombre {
     font-weight: bold;
 }
