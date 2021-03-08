@@ -230,3 +230,22 @@ section:nth-child(even) {
 .author-nombre {
     font-weight: bold;
 }
+
+.person-name {
+    font-size: 1.25em;
+}
+
+.person-link {
+    color: $bg-second-color;
+    font-size: .9em;
+    display: flex;
+    gap: .5em;
+    
+    &::after{
+        content: '';
+        display: block;
+        background: url('/static/img/github.svg') no-repeat;
+        background-size: contain;
+        width: 1.25em;
+    }
+}
