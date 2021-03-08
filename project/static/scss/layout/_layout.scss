@@ -98,7 +98,6 @@ section, .header, .footer {
     --padding: 1em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
     padding-top: var(--padding);
     padding-bottom: var(--padding);
 
@@ -139,7 +138,7 @@ section, .header, .footer {
 .img-banner-container {
     display: flex;
     justify-content: center;
-
+    
     @include media(lg) {
         width: 50%;
     }
@@ -147,10 +146,11 @@ section, .header, .footer {
 
 .banner-img {
     width: 60%;
-
+    height: auto;
+    
     @include media(md) {
-        align-self: center;
         width: 100%;
+        align-self: center;
     }
 
     @include media(lg) {
@@ -181,7 +181,6 @@ section, .header, .footer {
 /* Sección 3 */
 .card-container {
     display: flex;
-    gap: 1em;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -193,6 +192,8 @@ section, .header, .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 1em;
+    margin-bottom: 1em;
 
     @include media(lg) {
         height: 150px;
