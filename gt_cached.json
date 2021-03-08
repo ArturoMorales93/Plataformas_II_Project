@@ -1,5 +1,21 @@
 {
     "": {},
+    "\"El 5G puede estar m\u00e1s cerca y accesible de lo que se piensa, con esta nueva tecnolog\u00eda se lograr\u00eda\n            reducir un m\u00ednimo de latencia que esto equivale al tiempo de carga en una web, tambi\u00e9n aumentar\u00e1 la\n            velocidad de conexi\u00f3n y el n\u00famero de dispositivos conectados incrementar\u00eda, b\u00e1sicamente se estar\u00e1 conectado\n            a todo, todo el tiempo y mucho m\u00e1s r\u00e1pido que en la actualidad.\"": {
+        "en": "\"The 5G can be closer and accessible than it is thought, with this new technology it would be achieved\n            reduce a minimum of latency that this is equivalent to the loading time on a web, it will also increase the\n            Connection speed and the number of connected devices would increase, basically it will be connected\n            At all, all the time and much faster than at present. \"",
+        "es": "\"El 5G puede estar m\u00e1s cerca y accesible de lo que se piensa, con esta nueva tecnolog\u00eda se lograr\u00eda\n            reducir un m\u00ednimo de latencia que esto equivale al tiempo de carga en una web, tambi\u00e9n aumentar\u00e1 la\n            velocidad de conexi\u00f3n y el n\u00famero de dispositivos conectados incrementar\u00eda, b\u00e1sicamente se estar\u00e1 conectado\n            a todo, todo el tiempo y mucho m\u00e1s r\u00e1pido que en la actualidad.\""
+    },
+    "5G es la quinta generaci\u00f3n de tecnolog\u00eda celular. Est\u00e1 dise\u00f1ada para aumentar la velocidad, reducir la\n                latencia y mejorar la flexibilidad de los servicios inal\u00e1mbricos. La tecnolog\u00eda 5G ofrece una velocidad\n                m\u00e1xima te\u00f3rica de 20 Gbps, mientras que la velocidad m\u00e1xima de la tecnolog\u00eda 4G es solo de 1 Gbps. 5G\n                tambi\u00e9n ofrece menor latencia, lo que puede mejorar el rendimiento de las aplicaciones comerciales y de\n                otras experiencias digitales (como juegos en l\u00ednea, videoconferencias y autom\u00f3viles con piloto autom\u00e1tico).\n                (Cisco)": {
+        "en": "5G is the fifth generation of cellular technology.Is designed to increase speed, reduce the\n                Latency and improve the flexibility of wireless services.5G technology offers a speed\n                Theoretical maximum of 20 Gbps, while the maximum speed of 4G technology is only 1 Gbps.5G\n                It also offers less latency, which can improve the performance of commercial applications and\n                Other digital experiences (such as online games, videoconferences and automobiles with autopilot).\n                (Cisco)",
+        "es": "5G es la quinta generaci\u00f3n de tecnolog\u00eda celular. Est\u00e1 dise\u00f1ada para aumentar la velocidad, reducir la\n                latencia y mejorar la flexibilidad de los servicios inal\u00e1mbricos. La tecnolog\u00eda 5G ofrece una velocidad\n                m\u00e1xima te\u00f3rica de 20 Gbps, mientras que la velocidad m\u00e1xima de la tecnolog\u00eda 4G es solo de 1 Gbps. 5G\n                tambi\u00e9n ofrece menor latencia, lo que puede mejorar el rendimiento de las aplicaciones comerciales y de\n                otras experiencias digitales (como juegos en l\u00ednea, videoconferencias y autom\u00f3viles con piloto autom\u00e1tico).\n                (Cisco)"
+    },
+    "Compatible con tecnolog\u00eda que maneja el internet de las cosas o IoT, conectando dispositivos\n                    inteligentes, c\u00f3mo, por ejemplo, aparatos que utilizar realidad aumentada.": {
+        "en": "Compatible with technology that handles the Internet of things or IoT, connecting devices\n                    Intelligent, how, for example, appliances that use augmented reality.",
+        "es": "Compatible con tecnolog\u00eda que maneja el internet de las cosas o IoT, conectando dispositivos\n                    inteligentes, c\u00f3mo, por ejemplo, aparatos que utilizar realidad aumentada."
+    },
+    "Desventajas": {
+        "en": "Disadvantages",
+        "es": "Desventajas"
+    },
     "Ejemplo de un texto": {
         "en": "Example of a text",
         "es": "Ejemplo de un texto"
@@ -7,6 +23,26 @@
     "Ejemplo de un texto de espa\u00f1o a ingl\u00e9s.": {
         "en": "Example of a text from Spanish to English.",
         "es": "Ejemplo de un texto de espa\u00f1o a ingl\u00e9s."
+    },
+    "El rendimiento en la transferencia de datos aumentar\u00eda consiguiendo obtener unos 10Gbps de downlink(o\n                    sea, 10gigabits por segundo en conexi\u00f3n de bajada).": {
+        "en": "The performance in data transfer would increase managing about 10gbps from downlink (or\n                    Sea, 10Gigabits per second in connection).",
+        "es": "El rendimiento en la transferencia de datos aumentar\u00eda consiguiendo obtener unos 10Gbps de downlink(o\n                    sea, 10gigabits por segundo en conexi\u00f3n de bajada)."
+    },
+    "Es lo que se logra ver hasta el momento, logrando un gran cambio en comparaci\u00f3n con el 3G, obteniendo\n                velocidades de 100 Mbps donde se pueden reproducir videos con resoluci\u00f3n de hasta Ultra HD o 4K y acelerar\n                tareas en la nube.": {
+        "en": "Is what is achieved to see so far, achieving a great change compared to 3G, obtaining\n                100 Mbps speeds where you can play videos with resolution up to Ultra HD or 4K and accelerate\n                Tasks in the cloud.",
+        "es": "Es lo que se logra ver hasta el momento, logrando un gran cambio en comparaci\u00f3n con el 3G, obteniendo\n                velocidades de 100 Mbps donde se pueden reproducir videos con resoluci\u00f3n de hasta Ultra HD o 4K y acelerar\n                tareas en la nube."
+    },
+    "Esta generaci\u00f3n abri\u00f3 paso a los m\u00f3viles digitales, donde se plasm\u00f3 la idea de tel\u00e9fonos inteligentes como\n                una realidad, ofreciendo a los consumidores m\u00e1s funciones que simplemente llamadas donde el producto\n                estrella fueron los SMS (Mensajes de texto).": {
+        "en": "This generation opened through digital phones, where the idea of smartphones was reflected as\n                A reality, offering consumers more functions than just calls where the product\n                Star were the SMS (text messages).",
+        "es": "Esta generaci\u00f3n abri\u00f3 paso a los m\u00f3viles digitales, donde se plasm\u00f3 la idea de tel\u00e9fonos inteligentes como\n                una realidad, ofreciendo a los consumidores m\u00e1s funciones que simplemente llamadas donde el producto\n                estrella fueron los SMS (Mensajes de texto)."
+    },
+    "Esta generaci\u00f3n de comunicaciones m\u00f3viles, aparte de mejorar y brindar mayores servicios, busca conseguir m\u00e1s\n                velocidad en la transmisi\u00f3n de datos. Tambi\u00e9n posibilita un ecosistema capaz de entregar eficientemente\n                servicios inal\u00e1mbricos entre m\u00e1quinas, cosas y personas revolucionando en todo sentido la forma de\n                comunicarnos mediante conexiones fiables, eficientes y eficaces. (Batista Fuentes & D\u00edaz Ib\u00e1\u00f1ez, 2019)": {
+        "en": "This generation of mobile communications, apart from improving and providing greater services, seeks to get more\n                Speed in data transmission.Also enables an ecosystem capable of delivering efficiently\n                wireless services between machines, things and people revolutionizing in all sense the way of\n                Communicate through reliable, efficient and effective connections.(Batista Fuentes & D\u00edaz Ib\u00e1\u00f1ez, 2019)",
+        "es": "Esta generaci\u00f3n de comunicaciones m\u00f3viles, aparte de mejorar y brindar mayores servicios, busca conseguir m\u00e1s\n                velocidad en la transmisi\u00f3n de datos. Tambi\u00e9n posibilita un ecosistema capaz de entregar eficientemente\n                servicios inal\u00e1mbricos entre m\u00e1quinas, cosas y personas revolucionando en todo sentido la forma de\n                comunicarnos mediante conexiones fiables, eficientes y eficaces. (Batista Fuentes & D\u00edaz Ib\u00e1\u00f1ez, 2019)"
+    },
+    "Esta tecnolog\u00eda pretende ofrecer m\u00faltiples cambios comparada con las dem\u00e1s generaciones de tecnolog\u00eda celular\n                como lo es el 4G, las diferencias son muy grandes e importantes, que en la actualidad se notar\u00e1 demasiado el\n                avance.": {
+        "en": "This technology aims to offer multiple changes compared to the other generations of cellular technology\n                As the 4G is, the differences are very large and important, that at present the\n                Advance.",
+        "es": "Esta tecnolog\u00eda pretende ofrecer m\u00faltiples cambios comparada con las dem\u00e1s generaciones de tecnolog\u00eda celular\n                como lo es el 4G, las diferencias son muy grandes e importantes, que en la actualidad se notar\u00e1 demasiado el\n                avance."
     },
     "Este es un espacio en el que ofrecemos la informaci\u00f3n m\u00e1s importante y avanzada\n                del mundo tecnol\u00f3gico. Abarca los temas m\u00e1s controversiales e interesantes de las nuevas\n                tecnolog\u00edas que existen en la actualidad, en un mundo que encierra m\u00e9todos, y aplicaciones\n                que se pueden ver en un futuro en este mundo moderno.": {
         "en": "This is a space in which we offer the most important and advanced information\n                of the technological world.It covers the most controversial and interesting topics of the new\n                Technologies that currently exist, in a world that contains methods, and applications\n                that can be seen in the future in this modern world.",
@@ -16,6 +52,10 @@
         "en": "This is a space in which we offer you the most important and advanced information\n                of the technological world the most controversial and interesting topics of the new\n                Technologies that exist at present, in a world that contains methods, applications\n                that can be seen in the future in this modern world.",
         "es": "Este es un espacio en que le ofrecemos la informacion m\u00e1s importante y avanzada \n                del mundo tecnologico los temas m\u00e1s controversiales e interesantes de las nuevas\n                tecnologias que existen en la actualidad, en un mundo que encierra metodos, aplicaciones \n                que se pueden ver en un futuro en este mundo moderno."
     },
+    "Este punto antes mencionado, trae m\u00faltiples beneficios, en la actualidad, dependiendo del dispositivo y su\n                marca, el consumo de datos tambi\u00e9n afecta la bater\u00eda del m\u00f3vil, por lo cual resulta muy beneficioso\n                considerando que se puede utilizar por m\u00e1s tiempo el dispositivo sin que este se descargue.": {
+        "en": "This point mentioned above, brings multiple benefits, at present, depending on the device and its\n                Brand, data consumption also affects the battery of the mobile, so it is very beneficial\n                Considering that the device can be used for longer, without being discharged.",
+        "es": "Este punto antes mencionado, trae m\u00faltiples beneficios, en la actualidad, dependiendo del dispositivo y su\n                marca, el consumo de datos tambi\u00e9n afecta la bater\u00eda del m\u00f3vil, por lo cual resulta muy beneficioso\n                considerando que se puede utilizar por m\u00e1s tiempo el dispositivo sin que este se descargue."
+    },
     "Este sitio est\u00e1 conformado por un grupo de estudiantes de Ingenier\u00eda en TI,\n                    de la Universidad T\u00e9cnica Nacional (UTN), y nuestro objetivo es brindar un \n                    conocimiento amplio hacia sus mejores metodos de aplicacion e informaci\u00f3n \n                    importante, para as\u00ed tener una mejor comprensi\u00f3n y tranquilidad en su futuro \n                    recorrido por la evoluci\u00f3n de mejores tecnologias para el bien com\u00fan. Esperamos \n                    que este sea una sitio de utilidad para su mejor uso con su mejor informaci\u00f3n \n                    su espacio TechnoRevista.": {
         "en": "This site is made up of a group of engineering students in you,\n                    from the National Technical University (UTN), and our goal is to provide a\n                    Wide knowledge towards its best methods of application and information\n                    important, in order to have a better understanding and tranquility in your future\n                    Tour about the evolution of better technologies for the common good.We wait\n                    that this is a utility site for better use with your best information\n                    Your Technorevista space.",
         "es": "Este sitio est\u00e1 conformado por un grupo de estudiantes de Ingenier\u00eda en TI,\n                    de la Universidad T\u00e9cnica Nacional (UTN), y nuestro objetivo es brindar un \n                    conocimiento amplio hacia sus mejores metodos de aplicacion e informaci\u00f3n \n                    importante, para as\u00ed tener una mejor comprensi\u00f3n y tranquilidad en su futuro \n                    recorrido por la evoluci\u00f3n de mejores tecnologias para el bien com\u00fan. Esperamos \n                    que este sea una sitio de utilidad para su mejor uso con su mejor informaci\u00f3n \n                    su espacio TechnoRevista."
@@ -24,19 +64,83 @@
         "en": "This site is made up of a group of engineering students in you,\n                of the National Technical University (UTN).Our goal is to provide a\n                Wide knowledge towards your best methods of application and information\n                important;In order to have a better understanding and tranquility in your future\n                Tour about the evolution of better technologies for the common good.We wait\n                That this is a useful site for better use and information.Technorevista",
         "es": "Este sitio est\u00e1 conformado por un grupo de estudiantes de Ingenier\u00eda en TI,\n                de la Universidad T\u00e9cnica Nacional (UTN). Nuestro objetivo es brindar un\n                conocimiento amplio hacia sus mejores m\u00e9todos de aplicaci\u00f3n e informaci\u00f3n\n                importante; para as\u00ed tener una mejor comprensi\u00f3n y tranquilidad en su futuro\n                recorrido por la evoluci\u00f3n de mejores tecnolog\u00edas para el bien com\u00fan. Esperamos\n                que este sea un sitio de utilidad para su mejor uso e informaci\u00f3n. TechnoRevista"
     },
+    "La velocidad de conexi\u00f3n aument\u00f3 considerablemente, pasando un aproximado de 64 Kilobytes por segundo a 4\n                Megabytes por segundo, donde se abrieron muchas m\u00e1s funciones que se pueden realizar, por ejemplo, descarga\n                de aplicaciones y archivos, video conferencias desde el m\u00f3vil, streaming de videos y m\u00fasica, entre otras\n                funciones.": {
+        "en": "The connection speed increased considerably, passing an approximate 64 kilobytes per second to 4\n                Megabytes per second, where many more features were opened that can be done, for example, download\n                of applications and files, video conferences from mobile, streaming videos and music, among others\n                Functions",
+        "es": "La velocidad de conexi\u00f3n aument\u00f3 considerablemente, pasando un aproximado de 64 Kilobytes por segundo a 4\n                Megabytes por segundo, donde se abrieron muchas m\u00e1s funciones que se pueden realizar, por ejemplo, descarga\n                de aplicaciones y archivos, video conferencias desde el m\u00f3vil, streaming de videos y m\u00fasica, entre otras\n                funciones."
+    },
+    "Mayor n\u00famero de dispositivos conectados al mismo tiempo.": {
+        "en": "Greater number of devices connected at the same time.",
+        "es": "Mayor n\u00famero de dispositivos conectados al mismo tiempo."
+    },
     "Nanotecnolog\u00eda": {
         "en": "Nanotechnology",
         "es": "Nanotecnolog\u00eda"
+    },
+    "Objetivo de la red 5G": {
+        "en": "Objective of the 5G network",
+        "es": "Objetivo de la red 5G"
     },
     "Otro ejemplo de un texto de espa\u00f1o a ingl\u00e9s.": {
         "en": "Another example of a text from Spanish to English.",
         "es": "Otro ejemplo de un texto de espa\u00f1o a ingl\u00e9s."
     },
+    "Para entender un poco m\u00e1s sobre el 5G, se debe de conocer sobre la historia y evoluci\u00f3n, a continuaci\u00f3n, se\n                muestra un resumen sobre la historia hasta el momento:": {
+        "en": "To understand a little more about 5G, it should be known about history and evolution, then\n                It shows a summary on the story so far:",
+        "es": "Para entender un poco m\u00e1s sobre el 5G, se debe de conocer sobre la historia y evoluci\u00f3n, a continuaci\u00f3n, se\n                muestra un resumen sobre la historia hasta el momento:"
+    },
+    "Para utilizar o desplegar el 5G resulta costoso con respecto a infraestructura, es muy dif\u00edcil de\n                    comercializar por esta raz\u00f3n.": {
+        "en": "To use or deploy the 5G it is expensive with respect to infrastructure, it is very difficult to\n                    Market for this reason.",
+        "es": "Para utilizar o desplegar el 5G resulta costoso con respecto a infraestructura, es muy dif\u00edcil de\n                    comercializar por esta raz\u00f3n."
+    },
+    "Por otro lado, algunas de las ventajas que menciona Mena (2020): <br>\n                Habr\u00e1 mayor eficiencia de energ\u00eda de la red, las antenas van a consumir menos potencia, lo que genera un\n                ahorro de energ\u00eda de hasta 100 veces en una estaci\u00f3n base. Las bater\u00edas de los celulares tendr\u00e1n una\n                eficiencia de energ\u00eda de hasta 100 veces m\u00e1s que la actual.": {
+        "en": "On the other hand, some of the advantages mentioned by MENA (2020): <br>\n                There will be greater energy efficiency of the network, the antennas will consume less power, which generates a\n                Energy saving up to 100 times at a base station.The batteries of the cell phones will have a\n                Energy efficiency of up to 100 times more than the current one.",
+        "es": "Por otro lado, algunas de las ventajas que menciona Mena (2020): <br>\n                Habr\u00e1 mayor eficiencia de energ\u00eda de la red, las antenas van a consumir menos potencia, lo que genera un\n                ahorro de energ\u00eda de hasta 100 veces en una estaci\u00f3n base. Las bater\u00edas de los celulares tendr\u00e1n una\n                eficiencia de energ\u00eda de hasta 100 veces m\u00e1s que la actual."
+    },
+    "Promete garantizar mayor cobertura llegando al 100%.": {
+        "en": "It promises to guarantee more coverage reaching 100%.",
+        "es": "Promete garantizar mayor cobertura llegando al 100%."
+    },
     "Robotic Process Automatization": {
         "en": "Robotic Process Automatization"
+    },
+    "Se conoce que esta tecnolog\u00eda ya est\u00e1 siendo implementada en algunos de los pa\u00edses desde el 2019 como por\n                ejemplo Corea del Sur, Reino Unido, Italia; pero a\u00fan queda camino por recorrer para que esta tecnolog\u00eda\n                llegue alrededor del mundo, donde sea m\u00e1s accesible de manera comercial.": {
+        "en": "It is known that this technology is already being implemented in some of the countries since 2019 as\n                South Korea example, United Kingdom, Italy;but there is still a way to go for this technology\n                Arrive around the world, where it is more accessible commercially.",
+        "es": "Se conoce que esta tecnolog\u00eda ya est\u00e1 siendo implementada en algunos de los pa\u00edses desde el 2019 como por\n                ejemplo Corea del Sur, Reino Unido, Italia; pero a\u00fan queda camino por recorrer para que esta tecnolog\u00eda\n                llegue alrededor del mundo, donde sea m\u00e1s accesible de manera comercial."
+    },
+    "Se consigue obtener menor latencia entre uno y cinco milisegundos de transmisi\u00f3n, muy buenas noticias\n                    para las transmisiones en vivo, video llamadas y tiempo de respuesta de una p\u00e1gina web.": {
+        "en": "It is possible to obtain less latency between one and five milliseconds of transmission, very good news\n                    For live transmissions, video calls and response time of a web page.",
+        "es": "Se consigue obtener menor latencia entre uno y cinco milisegundos de transmisi\u00f3n, muy buenas noticias\n                    para las transmisiones en vivo, video llamadas y tiempo de respuesta de una p\u00e1gina web."
+    },
+    "Se dio a finales de los a\u00f1os 70 y 80 donde este \u00faltimo a\u00f1o se populariz\u00f3. Permiti\u00f3 la llegada de los\n                tel\u00e9fonos celulares al mercado mundial.": {
+        "en": "It was given at the end of the 70s and 80s where this last year was popularized.Allowed the arrival of\n                Cell phones to the world market.",
+        "es": "Se dio a finales de los a\u00f1os 70 y 80 donde este \u00faltimo a\u00f1o se populariz\u00f3. Permiti\u00f3 la llegada de los\n                tel\u00e9fonos celulares al mercado mundial."
+    },
+    "Se tendr\u00e1 que recurrir al cambio de dispositivos, ya que, no todos son compatibles con el 5G.": {
+        "en": "You will have to resort to the change of devices, since, not all are compatible with the 5G.",
+        "es": "Se tendr\u00e1 que recurrir al cambio de dispositivos, ya que, no todos son compatibles con el 5G."
     },
     "Tecnolog\u00eda 5G": {
         "en": "5G technology",
         "es": "Tecnolog\u00eda 5G"
+    },
+    "Un 90% menos en consumo de energ\u00eda.": {
+        "en": "90% less in energy consumption.",
+        "es": "Un 90% menos en consumo de energ\u00eda."
+    },
+    "Una desventaja del 5G que menciona Mena (2020) es que, \u201cEl 5G al utilizar frecuencias de radio m\u00e1s alta,\n                tendr\u00e1 un rango de cobertura menor, por tanto los operadores necesitar\u00e1n instalar m\u00e1s nodos (antenas) en el\n                pa\u00eds, lo que tomar\u00e1 m\u00e1s tiempo para dar cobertura total\u201d. Al tener la necesidad de instalar m\u00e1s antenas\n                alrededor de todo el territorio del pa\u00eds esto generar\u00e1 muchos gastos adicionales que no todo gobierno tiene\n                presupuesto para tal acci\u00f3n, por lo cual resulta una desventaja gigante para aquellos pa\u00edses que no cuentan\n                con dichos recursos. (Mena, 2020)": {
+        "en": "A disadvantage of the 5G mentioned by MENA (2020) is that, \"The 5G when using higher radio frequencies,\n                will have a lower coverage range, therefore operators will need to install more nodes (antennas) in the\n                country, which will take more time to give total coverage. \"By having the need to install more antennas\n                around all the territory of the country this will generate many additional expenses that not every government has\n                budget for such action, for which it is a giant disadvantage for those countries that do not count\n                with these resources.(Mena, 2020)",
+        "es": "Una desventaja del 5G que menciona Mena (2020) es que, \u201cEl 5G al utilizar frecuencias de radio m\u00e1s alta,\n                tendr\u00e1 un rango de cobertura menor, por tanto los operadores necesitar\u00e1n instalar m\u00e1s nodos (antenas) en el\n                pa\u00eds, lo que tomar\u00e1 m\u00e1s tiempo para dar cobertura total\u201d. Al tener la necesidad de instalar m\u00e1s antenas\n                alrededor de todo el territorio del pa\u00eds esto generar\u00e1 muchos gastos adicionales que no todo gobierno tiene\n                presupuesto para tal acci\u00f3n, por lo cual resulta una desventaja gigante para aquellos pa\u00edses que no cuentan\n                con dichos recursos. (Mena, 2020)"
+    },
+    "Ventajas": {
+        "en": "Advantage",
+        "es": "Ventajas"
+    },
+    "Ventajas y desventajas": {
+        "en": "Advantages and disadvantages",
+        "es": "Ventajas y desventajas"
+    },
+    "\u00bfQu\u00e9 es 5G?": {
+        "en": "What is 5g?",
+        "es": "\u00bfQu\u00e9 es 5G?"
     }
 }
