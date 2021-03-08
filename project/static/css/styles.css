@@ -416,6 +416,21 @@ div[class*="post"] {
   }
 }
 
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.person {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.person-name {
+  margin-bottom: .25em;
+}
+
 .header {
   background-color: #003355;
   border-bottom: 0 solid rgba(0, 51, 85, 0.22);
@@ -645,6 +660,25 @@ section:nth-child(even) {
 
 .author-nombre {
   font-weight: bold;
+}
+
+.person-name {
+  font-size: 1.25em;
+}
+
+.person-link {
+  color: #637BAD;
+  font-size: .9em;
+  display: flex;
+  gap: .5em;
+}
+
+.person-link::after {
+  content: '';
+  display: block;
+  background: url("/static/img/github.svg") no-repeat;
+  background-size: contain;
+  width: 1.25em;
 }
 
 /*# sourceMappingURL=styles.css.map */
