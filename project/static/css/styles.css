@@ -448,6 +448,12 @@ div[class*="post"] {
   border-top: 1px solid rgba(229, 229, 229, 0.22);
 }
 
+.footer svg {
+  margin-left: .25em;
+  height: 1.25em;
+  width: 1.25em;
+}
+
 .arrow-up {
   color: transparent;
   cursor: default;
@@ -681,6 +687,10 @@ section:nth-child(even) {
   background-size: contain;
   width: 1.25em;
   margin-left: .5em;
+}
+
+.repository-link {
+  font-size: 1.25em;
 }
 
 /*# sourceMappingURL=styles.css.map */
