@@ -107,7 +107,6 @@ section:nth-child(even) {
 
 /* Sección 3 */
 .card-container {
-    --time: .5s;
 
     a {
         border-radius: 1em;
@@ -145,20 +144,22 @@ section:nth-child(even) {
 
     h3 {
         font-size: 1.25em;
-        position: absolute;
-        top: 50%;
-        transform: translate3d(0, -50%, 0);
         transition: var(--time);
 
         @include media(lg) {
-            font-size: 1.75em;
+            font-size: 1.5em;
         }
     }
 
     p {
-        position: absolute;
-        top: 100%;
-        transition: var(--time);
+        display: none;
+
+        @include media(lg) {
+            display: block;
+            position: absolute;
+            transform: translate3d(0, 175%, 0);
+            transition: var(--time);
+        }
     }
 
     &::after {
@@ -199,13 +200,11 @@ section:nth-child(even) {
         }
 
         h3 {
-            font-size: 1.5em;
-            top: 1em;
-            transform: translate3d(0, 0, 0);
+            transform: translate3d(0, -150%, 0);
         }
 
         p {
-            top: 4em;
+            transform: translate3d(0, 50%, 0);;
         }
     }
 }
