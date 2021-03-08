@@ -649,6 +649,12 @@ section:nth-child(even) {
   background-color: #DDE;
 }
 
+.section-article > p {
+  border-bottom: 1px solid rgba(0, 51, 85, 0.22);
+  padding-bottom: 1.5em;
+  margin-bottom: 2em;
+}
+
 .section-article section {
   color: inherit;
   background-color: inherit;
