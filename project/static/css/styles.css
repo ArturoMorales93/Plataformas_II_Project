@@ -296,14 +296,14 @@ section {
 }
 
 /* Sección 3 */
-div .card-container {
+.card-container {
   display: flex;
+  gap: 1em;
   flex-wrap: wrap;
-  gap: 1em !important;
   justify-content: center;
 }
 
-div .card {
+.card {
   padding: .5em 1em;
   height: 100px;
   width: 150px;
@@ -313,18 +313,18 @@ div .card {
 }
 
 @media screen and (min-width: 1024px) {
-  div .card {
+  .card {
     height: 150px;
     width: 250px;
     padding: 1em 1.5em;
   }
 }
 
-div .card h3 {
+.card h3 {
   margin-bottom: 0;
 }
 
-div .card p {
+.card p {
   text-align: center;
 }
 
@@ -561,10 +561,6 @@ section:nth-child(even) {
 
 /* Sección 2 */
 /* Sección 3 */
-.card-container {
-  --time: .5s;
-}
-
 .card-container a {
   border-radius: 1em;
 }
@@ -601,22 +597,26 @@ section:nth-child(even) {
 
 .card h3 {
   font-size: 1.25em;
-  position: absolute;
-  top: 50%;
-  transform: translate3d(0, -50%, 0);
   transition: var(--time);
 }
 
 @media screen and (min-width: 1024px) {
   .card h3 {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 }
 
 .card p {
-  position: absolute;
-  top: 100%;
-  transition: var(--time);
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .card p {
+    display: block;
+    position: absolute;
+    transform: translate3d(0, 175%, 0);
+    transition: var(--time);
+  }
 }
 
 .card::after {
@@ -655,13 +655,11 @@ section:nth-child(even) {
 }
 
 .card:hover h3 {
-  font-size: 1.5em;
-  top: 1em;
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, -150%, 0);
 }
 
 .card:hover p {
-  top: 4em;
+  transform: translate3d(0, 50%, 0);
 }
 
 /* Others */
