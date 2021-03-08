@@ -64,7 +64,9 @@
     <!-- Footer -->
     <footer class="footer">
         <p>
-            © Todos los Derechos Reservados 2021 |
+        <div class="footer-container">
+            {{ translate(text='© Todos los Derechos Reservados 2021', src='es', dest=['en']) }}
+            <span> | </span>
             <a href="https://github.com/ArturoMorales93/Plataformas_II_Project" target="_blank">TechnoRevista Repository
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -74,6 +76,7 @@
                     </svg>
                 </span>
             </a>
+        </div>
         </p>
     </footer>
 
