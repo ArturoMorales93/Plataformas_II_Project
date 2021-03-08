@@ -211,13 +211,27 @@ section, .header, .footer {
 }
 
 /* Footer */
-.footer {
+.footer-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
+    @include media(md) {
+        flex-direction: row;
+    }
+
     p {
         margin: 0;
+    }
+
+    & > span {
+        display: none;
+
+        @include media(md) {
+            display: block;
+            margin: 0 .5em;
+        }
     }
 }
 
