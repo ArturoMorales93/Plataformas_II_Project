@@ -270,3 +270,18 @@ section:nth-child(even) {
 .repository-link {
     font-size: 1.25em;
 }
+
+.reference-link {
+    display: flex;
+    align-items: center;
+
+    
+    &::before {
+        content: '';
+        display: block;
+        background: url('/static/img/cpu-fill.svg') no-repeat;
+        height: 1em;
+        width: 1em;
+        margin-right: .25em;
+    }
+}
