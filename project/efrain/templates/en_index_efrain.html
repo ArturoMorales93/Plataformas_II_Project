@@ -8,6 +8,7 @@
     <!-- Contenido de la página -->
     <section class="section-article">
         <h1 class="text-center">{{ translate(text='Robotic Process Automatization', src='en', dest=['en']) }}</h1>
+        <img src= "/Rpa/IMG_1.jpg" alt="RPA Banner">
         <div class="author">
             <div>
                 <p class="author-nombre">Author: Efraín Araya</p>
@@ -17,9 +18,78 @@
         </div>
     
         <section>
-            <!-- Contenido  -->
-            {{ translate(text='Ejemplo de un texto', src='es', dest=['en']) }}
-            
+            <h2>{{ translate(text='¿QUE ES RPA?', src='es', dest=['en']) }}</h2>
+            <p>
+                {{ translate(text='La Automatización de Procesos Automáticos (RPA según sus siglas en inglés)
+                es la ciencia tecnológica que permite configurar un software o “robot” para 
+                controlar e interpretar las aplicaciones ya existentes y poder procesar una transacción, 
+                manipular datos, comunicarse con otros sistemas digitales.', src='es', dest=['en']) }}
+            </p>
+
+            <p>
+                {{ translate(text='Al hablar de automatización comúnmente se 
+                confunde un software de automatización con el roceso robótico, enfocándose 
+                en las maquinas de ensamble que poseen algunas fábricas, ya que ambos poseen el principio 
+                de la automatización de tareas u procesos que tienden a repetirse continuamente, la diferencia 
+                radica en que el RPA o procesos automatización es un programa (software) que ejecuta sus acciones 
+                internamente en una computadora por tanto no podemos ver que es lo que hace, en cambio, la robótica 
+                de ensamblaje conlleva una instalación estructural previa para que esta pueda funcionar, además este tipo de 
+                automatización si lo podemos ver lo que hace y como lo hace.', src='es', dest=['en']) }}
+            </p>
+
+            <h2>{{ translate(text='OBJETIVO Y FUNCIONALIDAD DEL RPA', src='es', dest=['en']) }}</h2>
+            <p>
+                {{ translate(text='El objetivo principal de los procesos robóticos autotizados es la automatización de 
+                procesos u tareas repetitivas, eliminando de esta manera el factor y error humano.
+                Para poder ejecutar esta tecnología los programadores de software deben tener claro cuál es la tarea 
+                que el ‘’Bot ‘’ va a realizar de esta manera se analiza y a su vez se instruyen las condiciones bajo 
+                las cuales trabajará el Bot, cabe recalcar que en este paso son muy importantes los detalles, ya que 
+                estos serán los que le daran forma a la tarea a realizar.', src='es', dest=['en']) }}
+            </p>
+
+            <p>
+                {{ translate(text='Después de haberse logrado crear el código predestinado, los encargados analistas deben de 
+                asignar la tarea que llegará a realizar, de esta manera se monitoreará que actividades realiza y 
+                así podrán enterarse si deben de cambiar parámetros o si deben agregar o eliminar procedimientos 
+                preestablecidos, esta fase es muy importante ya que es la fase prueba y mostrará si realmente se 
+                cumple los establecido en el código del RPA.', src='es', dest=['en']) }}
+            </p>
+            <img src="/Rpa/IMG_5.png" alt="ImgReferencia1">
+
+            <h2>{{ translate(text='VENTAJAS', src='es', dest=['en']) }}</h2>
+            <ol>
+                <li>{{ translate(text='Una de las ventajas muy marcada que posee el RPA es su fácil implementación 
+                    cuando ya se encuentra disponibles para los usuarios, ya que si hablamos de una implementación 
+                    personalizada puede tardar alrededor de dos semanas, sin embargo, un software disponible en el 
+                    mercado tardaría simplemente horas, ya que sería como instalar un nuevo programa en los equipos 
+                    requeridos.', src='es', dest=['en']) }}</li>
+                <li>{{ translate(text='Otra ventaja notable en la implementación es su reducción de costos, ya que el software puede 
+                    trabajar las veinticuatro horas seguidas los siete días de la semana, de esta manera se mejora 
+                    la productividad obteniendo así un mejor aprovechamiento de recursos.', src='es', dest=['en']) }}</li>
+                <li>{{ translate(text='Al ser un robot quien se encarga de la ejecución de tareas, no tiene porqué cometer errores, 
+                    ya que el Bot como tal solo ejecutaría las tareas que le asignen de esta manera no tendría más 
+                    variaciones que puedan afectar su desempeño.', src='es', dest=['en']) }}</li>
+            </ol>
+
+            <h2>{{ translate(text='DESVENTAJAS', src='es', dest=['en']) }}</h2>
+            <ol>
+                <li>{{ translate(text='Para poder obtener un proceso automatizado se debe de tomar en cuenta el coste de inversión, 
+                    ya sea el coste del valor del producto, o el coste de los equipos en los cuales se debe de adaptar 
+                    si fuera necesario para poder implementarse.', src='es', dest=['en']) }}</li>
+                <li>{{ translate(text='Al tenerse que implementar un robot para la ejecución de tareas se tendrá que desplazar o 
+                    despedir personal, esto porque el Bot termina siendo mucho más eficaz y eficiente que una persona.', src='es', dest=['en']) }}</li>
+                <li>{{ translate(text='Al ser un software de tareas específicas posee una limitación en la toma de decisiones.', src='es', dest=['en']) }}</li>
+            </ol>
+            <img src="/Rpa/IMG_2.png" alt="ImgReferencia2">
+
+            <h2>{{ translate(text='CONCLUSION', src='es', dest=['en']) }}</h2>
+            <p>
+                {{ translate(text='En conclusión los procesos robóticos automatizados son muy eficientes y eficaces, sin embargo,
+                debe de haber un proceso de analisis profundo detras, ya que se debe de entender cual es la tarea u proceso
+                que se quiere automatizar, además por parte de las empresas deben de evaluar que tipo de software conviene mejor, 
+                ya que en el mercado existe una gran variedad de ellos, por tanto se debe de pensar en que da mejor resultado el
+                renombre y poca eficiencia o una mejor eficiencia pero sin renombre, esto dependera de lo que se quiera lograr.', src='es', dest=['en']) }}
+            </p>
         </section>
     </section>
 {% endblock %}
