@@ -3,3 +3,4 @@ venv/
 entorno/
 enviroment/
 __pycache__/
+.vscode/
