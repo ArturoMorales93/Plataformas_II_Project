@@ -1,14 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" id="html">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master_Data_Management</title>
+    <meta name="description" content="An article about Master Data Management. Enjoy.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/static/img/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <title>Master Data Management</title>
 </head>
-<body>
-    
-    <h1>Master_Data_Management</h1>
 
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+            <a class="navbar-brand" href="/en/mdm" id="iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-cpu-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                    <path
+                        d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="section-article">
+        
+            <div class="col-6 mx-auto">
+                <div class="iot-img-container">    
+                    <img src="/static/img/mdm/MDM.png" alt="Imagen ilustrativa" class="iot-img mb-4">
+                </div>
+
+                <h2>
+                    What is Master Data Management?
+                </h2>
+
+                <div class="author m-5">
+                    <div>
+                        <p>Publication date: April 6, 2021</p>
+                        <p>Updated: April 13, 2021</p>
+                        <p class="author-nombre">Authors: Brenda Rojas, Efrain Araya and Carlos Mairena</p>
+                    </div>
+                </div>
+
+                <p>{{ translate(text='
+                    Conforme las empresas van emergiendo y en lo mejor de los casos crecen exponencialmente, estas generan información cada 
+                    vez más importante para su funcionamiento.
+                    ', src='es', dest=['en']) }}
+                </p>
+        
+                <p>{{ translate(text='
+                    Master Data Management (MDM) se considera como una metodología utilizada por grandes empresas en el mundo para 
+                    controlar y asegurar la masiva cantidad de información que estas crean, comparten y utilizan para operar. En resumidas 
+                    palabras, MDM no es específicamente una tecnología para implementar en una organización, sino, una serie de procesos
+                    y políticas que finalmente reposan en alcanzar los siguientes principales objetivos: 
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <ol>
+                    <li>Data Master</li>
+                    <li>Critical data Governance and Centralization</li>
+                    <li>Avoid duplication of information</li>
+                </ol>
+        
+                <p><p>{{ translate(text='
+                    En todas las empresas, se encuentran una gran cantidad de tipos de datos
+                    ', src='es', dest=['en']) }}
+                </p>
+        
+                <p>{{ translate(text='
+                    En la industria de los automóviles se ha utilizado para ofrecer funciones avanzadas como el mencionado
+                    "piloto automático" de muchas compañías como TESLA. También mencionar que el IOT complementada
+                    con otra área como el Machine Learning dan aún más soluciones casi que imposibles o muy difíciles de 
+                    conseguir hace menos de 5 años.
+                    ', src='es', dest=['en']) }}
+                </p>
+                <hr>
+        
+                <h3>
+                    How does Internet of Things work?
+                </h3>
+                <iframe width="100%" height="480px" src="https://www.youtube.com/embed/QSIPNhOiMoE" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+        
+                <p>{{ translate(text='
+                    En resumen, el IOT no tiene un concepto como tal, pero sigue la filosofía de conectar cualquier cosa a internet, desde ropa, accesorios,
+                    electrodomésticos, muebles, automóviles, etc. La necesidad de hacer esto, como se mostró en el video, es lograr 
+                    hacer aquellas tareas que pudieran ser imposibles de realizar.
+                    ', src='es', dest=['en']) }}
+                </p>
+        
+                <p>{{ translate(text='
+                    Básicamente estos dispositivos contienen un pequeño circuito que contiene muy pocos recursos específicos
+                    para realizar sus funciones. Entre esos recursos posee un microcontrolador que es el encargado de realizar
+                    las operaciones principales como recolectar y enviar datos que reúne de sensores, estos sensores pueden 
+                    ser de temperatura, humedad, movimiento, etc.
+                    ', src='es', dest=['en']) }}
+                </p>
+        
+                <hr>
+                <h3>
+                    {{ translate(text='¿Qué necesito para crear mi dispositivo del IOT?', src='es', dest=['en']) }}
+                </h3>
+        
+                <img src="/static/img/iot/arduino.jpg" alt="Imagen ilustrativa" class="iot-img mb-4">
+        
+                <p>{{ translate(text='
+                    Con los años se han ido fundando comunidades importantes donde se comparten proyectos IOT Open Source, 
+                    así como GitHub donde se comparte código fuente de muchos sistemas de Software, existen también donde se 
+                    comparten especificaciones de sensores, microcontroladores y todo aquel conocimiento de electrónica necesaria 
+                    para poder desarrollar o implementar alguna solución IOT, entre estas se encuentran las siguientes: ', src='es', dest=['en']) }}
+                    <a href="https://www.hackster.io/" target="_blank">Hackster</a>, 
+                    <a href="https://www.circuito.io/" target="_blank">Circuits IO</a>, 
+                    <a href="https://upverter.com/" target="_blank">Upverter</a>, 
+                    <a href="https://oshpark.com/" target="_blank">OSHPark</a>, etc.
+                </p>
+        
+                <p>{{ translate(text='
+                    Si deseamos empezar a desarrollar nuestros propios prototipos utilizando sensores, 
+                    podemos visitar el sitio web oficial de la plataforma Arduino: ', src='es', dest=['en']) }}
+                    <a href="https://store.arduino.cc/usa/other-shields/components-sensors" target="_blank">
+                    Sensors and components Arduino.cc</a>
+                </p>
+        
+                <p>{{ translate(text='
+                    También podemos utilizar las placas como Raspberry PI y Arduino en sus distintas versiones, en los siguientes enlaces
+                    podemos ver los precios y versiones.', src='es', dest=['en']) }}
+                </p>
+        
+                <div class="list-group">
+                    <a href="https://www.raspberrypi.org/products/" target="_blank" class="list-group-item list-group-item-action">Raspberry PI</a>
+                    <a href="https://www.arduino.cc/en/Main/Products" target="_blank" class="list-group-item list-group-item-action">Arduino</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+        <div class="footer-container">
+            © Todos los Derechos Reservados 2021
+            <span> | </span>
+        </div>
+        </p>
+    </footer>
+
+    <!-- Up-button -->
+    <div>
+        <a href="#">
+            <svg id="arroUpButton" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                class="bi bi-arrow-up-circle-fill arrow-up" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/js/jquery-3.5.1.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/scripts.js"></script>
 </body>
+
 </html>
