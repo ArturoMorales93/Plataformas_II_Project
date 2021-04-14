@@ -24,10 +24,6 @@
                         d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z" />
                 </svg>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </nav>
     </header>
 
@@ -35,7 +31,7 @@
     <main class="main">
         <div class="section-article">
         
-            <div class="col-6 mx-auto">
+            <div class="col-12 col-md-6 mx-auto">
                 <div class="iot-img-container">    
                     <img src="/static/img/mdm/MDM.png" alt="Imagen ilustrativa" class="iot-img mb-4">
                 </div>
@@ -51,98 +47,116 @@
                         <p class="author-nombre">Authors: Brenda Rojas, Efrain Araya and Carlos Mairena</p>
                     </div>
                 </div>
-
-                <p>{{ translate(text='
-                    Conforme las empresas van emergiendo y en lo mejor de los casos crecen exponencialmente, estas generan información cada 
-                    vez más importante para su funcionamiento.
-                    ', src='es', dest=['en']) }}
-                </p>
         
                 <p>{{ translate(text='
                     Master Data Management (MDM) se considera como una metodología utilizada por grandes empresas en el mundo para 
-                    controlar y asegurar la masiva cantidad de información que estas crean, comparten y utilizan para operar. En resumidas 
-                    palabras, MDM no es específicamente una tecnología para implementar en una organización, sino, una serie de procesos
-                    y políticas que finalmente reposan en alcanzar los siguientes principales objetivos: 
+                    controlar y asegurar la masiva cantidad de información que estas crean, comparten y utilizan para operar. En resumen, 
+                    MDM no es específicamente una tecnología para implementar en una organización, sino, una serie de procesos
+                    y políticas que finalmente reposan en alcanzar los Data Master, con el objetivo de alcanzar a "single version of the truth."
+                    en los datos más críticos.
+                    ', src='es', dest=['en']) }}
+                </p>
+        
+                <p>{{ translate(text='
+                    Conforme las empresas van emergiendo y en lo mejor de los casos crecen exponencialmente, estas generan información cada 
+                    vez más importante para su funcionamiento, así también sucede que cierta información van siendo obsoleta o va 
+                    perdiendo su relevancia. En todas las empresas, se encuentran una serie de tipos de datos, donde empresas expertas 
+                    clasificacan los datos, algunas de estas ofrecen servicios de integración MDM (example:
+                    ', src='es', dest=['en']) }}
+                    <a href="https://www.ibm.com/analytics/master-data-management" target="_blank" rel="noopener noreferrer">IBM</a>,
+                    <a href="https://profisee.com/" target="_blank" rel="noopener noreferrer">Profisee</a>)
+                </p>
+
+                <hr>
+                <h3 class="text-center">Processes and Domains/Entities enterprise integrated in MDM</h3>
+                <img src="/static/img/mdm/process-min.jpg" alt="process illustrative" width="60%" style="border-radius: 8px;">
+
+
+                <p>{{ translate(text='
+                    Todas las compañías contienen niveles de acceso a la información, procesos de producción, productos, servicios, clientes,
+                    etc. 
+                    Todos estos factores en MDM se pueden identificar como DOMINIOS, principalmente para poder clasificar los 
+                    grupos de datos, de igual manera, estos datos pueden estar almacenados y expresados de múltiples maneras, por lo que 
+                    la metodología MDM y años de estudio han concluido en clasificar a', src='es', dest=['en']) }} <b>DATA TYPES</b>.
+                </p>
+
+                <h4>Types of data typically found in corporations</h4>
+                <dl>
+                    <dt>Unstructured Data</dt>
+                    <dd>- These are found in the body of emails, printed documents, product specifications, PDF files.</dd>
+                    
+                    <dt>Transactional Data</dt>
+                    <dd>- These are all those data originating from events and functions of the company related to monetary transactions 
+                        such as sales and purchases, but also to non-monetary transactions, but quantitative ones.</dd>
+
+                    <dt>Metadata</dt>
+                    <dd>- This is data that identifies and or defines other data. These are commonly found in repositories that have 
+                        some level of formality, such as documents in XML and JSON format, spreadsheets, etc.</dd>
+
+                    <dt>Hierarchical Data</dt>
+                    <dd>- They are data that is stored and related to other data to form information. They can be distributed among 
+                        different computer data, but these must in some way relate the data they have to form the information.
+                    </dd>
+
+                    <dt>Reference Data</dt>
+                    <dd>- This is a type of Master Data, used to categorize data or also to relate data to some important information in 
+                        the company.
+                    </dd>
+                    
+                    <dt>Master Data</dt>
+                    <dd>- The type of data that has been discussed in this document, this corresponds to the core of the most important 
+                        data of a company, this in turn has different access interfaces to only the data necessary for the other systems.
+                    </dd>
+                </dl>
+
+                <hr>
+                
+                <h3 class="text-center">
+                    Arquitectural Considerations
+                </h3>
+                <img src="/static/img/mdm/checklist-min.jpg" alt="architecture illustrative" width="60%" style="border-radius: 8px;">
+
+                <p>{{ translate(text='
+                    Tal como se ha mencionado, el Master Data Management no es un problema o solución tecnológica directamente, sino que 
+                    contiene componentes tecnológicos, es mucho más que una Base de Datos de productos o de algún otro dominio.
+                    También algunos otros componentes o capas que conforman el MDM son "tradicionales" de la industria tecnológica.
                     ', src='es', dest=['en']) }}
                 </p>
 
-                <ol>
-                    <li>Data Master</li>
-                    <li>Critical data Governance and Centralization</li>
-                    <li>Avoid duplication of information</li>
-                </ol>
-        
-                <p><p>{{ translate(text='
-                    En todas las empresas, se encuentran una gran cantidad de tipos de datos
-                    ', src='es', dest=['en']) }}
-                </p>
-        
                 <p>{{ translate(text='
-                    En la industria de los automóviles se ha utilizado para ofrecer funciones avanzadas como el mencionado
-                    "piloto automático" de muchas compañías como TESLA. También mencionar que el IOT complementada
-                    con otra área como el Machine Learning dan aún más soluciones casi que imposibles o muy difíciles de 
-                    conseguir hace menos de 5 años.
+                    Antes de iniciar con todos los procesos para impelementar MDM con alguna arquitectura popular o recomendada por alguna 
+                    empresa u otros, es necesario considerar lo siguiente:
                     ', src='es', dest=['en']) }}
                 </p>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        There are many architecture viewpoints, significant complexity, and a large number of interdependencies to warrant 
+                        a framework-based approach to the architecture. This multifaceted, multidimensional architecture framework looks at 
+                        the overall problem domain from different but complementary angles.
+                    </li>
+                    <li class="list-group-item">
+                        An architectural vision can help organize the “old” and the “new” features into an integrated, scalable, and 
+                        manageable solution.
+                    </li>
+                    <li class="list-group-item">
+                        Any solution intended to create an authoritative, accurate, and timely system of record that should eventually 
+                        replace existing legacy sources of the information must be integrated with the overall enterprise architecture 
+                        and infrastructure.
+                    </li>
+                </ul>
+                
                 <hr>
-        
-                <h3>
-                    How does Internet of Things work?
+                <h3 class="text-center">
+                    Data Hub Architecture Styles
                 </h3>
-                <iframe width="100%" height="480px" src="https://www.youtube.com/embed/QSIPNhOiMoE" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-        
+
                 <p>{{ translate(text='
-                    En resumen, el IOT no tiene un concepto como tal, pero sigue la filosofía de conectar cualquier cosa a internet, desde ropa, accesorios,
-                    electrodomésticos, muebles, automóviles, etc. La necesidad de hacer esto, como se mostró en el video, es lograr 
-                    hacer aquellas tareas que pudieran ser imposibles de realizar.
+                    Tomando en cuenta las consideraciones mencionadas
                     ', src='es', dest=['en']) }}
                 </p>
-        
-                <p>{{ translate(text='
-                    Básicamente estos dispositivos contienen un pequeño circuito que contiene muy pocos recursos específicos
-                    para realizar sus funciones. Entre esos recursos posee un microcontrolador que es el encargado de realizar
-                    las operaciones principales como recolectar y enviar datos que reúne de sensores, estos sensores pueden 
-                    ser de temperatura, humedad, movimiento, etc.
-                    ', src='es', dest=['en']) }}
-                </p>
-        
-                <hr>
-                <h3>
-                    {{ translate(text='¿Qué necesito para crear mi dispositivo del IOT?', src='es', dest=['en']) }}
-                </h3>
-        
-                <img src="/static/img/iot/arduino.jpg" alt="Imagen ilustrativa" class="iot-img mb-4">
-        
-                <p>{{ translate(text='
-                    Con los años se han ido fundando comunidades importantes donde se comparten proyectos IOT Open Source, 
-                    así como GitHub donde se comparte código fuente de muchos sistemas de Software, existen también donde se 
-                    comparten especificaciones de sensores, microcontroladores y todo aquel conocimiento de electrónica necesaria 
-                    para poder desarrollar o implementar alguna solución IOT, entre estas se encuentran las siguientes: ', src='es', dest=['en']) }}
-                    <a href="https://www.hackster.io/" target="_blank">Hackster</a>, 
-                    <a href="https://www.circuito.io/" target="_blank">Circuits IO</a>, 
-                    <a href="https://upverter.com/" target="_blank">Upverter</a>, 
-                    <a href="https://oshpark.com/" target="_blank">OSHPark</a>, etc.
-                </p>
-        
-                <p>{{ translate(text='
-                    Si deseamos empezar a desarrollar nuestros propios prototipos utilizando sensores, 
-                    podemos visitar el sitio web oficial de la plataforma Arduino: ', src='es', dest=['en']) }}
-                    <a href="https://store.arduino.cc/usa/other-shields/components-sensors" target="_blank">
-                    Sensors and components Arduino.cc</a>
-                </p>
-        
-                <p>{{ translate(text='
-                    También podemos utilizar las placas como Raspberry PI y Arduino en sus distintas versiones, en los siguientes enlaces
-                    podemos ver los precios y versiones.', src='es', dest=['en']) }}
-                </p>
-        
-                <div class="list-group">
-                    <a href="https://www.raspberrypi.org/products/" target="_blank" class="list-group-item list-group-item-action">Raspberry PI</a>
-                    <a href="https://www.arduino.cc/en/Main/Products" target="_blank" class="list-group-item list-group-item-action">Arduino</a>
-                </div>
+
+
             </div>
         </div>
     </main>
@@ -152,7 +166,6 @@
         <p>
         <div class="footer-container">
             © Todos los Derechos Reservados 2021
-            <span> | </span>
         </div>
         </p>
     </footer>
