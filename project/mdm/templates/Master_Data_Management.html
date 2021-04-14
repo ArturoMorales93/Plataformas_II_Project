@@ -207,6 +207,33 @@
                 <h4>° Coexistence  Hub</h4>
                 <img src="/static/img/mdm/Coexistence_hub.png" alt="Coexistence Hub Architecture" width="60%" style="border-radius: 8px; margin: 10px;">
 
+                <p>
+                    This style of architecture physically stores some master data that contains references to some other data in the system.
+                    This Data Hub style is not used to directly originate transactions, but is updated from the source systems 
+                    that initiate transactions. The Data Hub is used as a central reference point for master data.
+                </p>
+
+                <p>{{ translate(text='
+                    Es una buena elección si la estrategia de la empresa es conservar parcialmente algunos de los sistemas ya implementados y
+                    refactorizar o alterar algunos de ellos, ya que permite utilizarse como un paso hacia la arquitectura "Transaction Hub".
+                    ', src='es', dest=['en']) }}
+                </p>
+
+
+                <h5>Advantages:</h5>
+                <ul>
+                    <li>- The Coexistence Data Hub solution cost is relatively low.</li>
+                    <li>- Data retrieval performance issues are resolved by storing certain data attributes in the Data Hub.</li>
+                </ul>
+
+                <h5>Disadvantages:</h5>
+                <ul>
+                    <li>- Some transformations required to maintain Data Hub content can be quite complex.</li>
+                    <li>- This style assumes some data redundancy, its design must allow for synchronization and reconciliation of data 
+                        changes between the source systems and the data center.
+                    </li>
+                </ul>
+
                 <h4>° Transaction Hub</h4>
                 <img src="/static/img/mdm/Transaction_Hub.png" alt="Transaction Hub Architecture" width="60%" style="border-radius: 8px; margin: 10px;">
                 
