@@ -159,11 +159,31 @@
                 </h3>
 
                 <p>{{ translate(text='
-                    Tomando en cuenta las consideraciones mencionadas
-                    ', src='es', dest=['en']) }}
+                    Tomando en cuenta las consideraciones mencionadas, y en base a estas haber formado el framework-based approach architecture,
+                    podemos ahora tomar en cuenta las tres arquitecturas más populares de la industria con respecto al MDM, estas 
+                    arquitecturas se han tomado del libro:', src='es', dest=['en']) }} 
+                    <a href="https://learning.oreilly.com/library/view/master-data-management/9780071744584/" target="_blank"><u>
+                        "MASTER DATA MANAGEMENT AND DATA GOVERNANCE, 2/E, 2nd Edition". by Alex Berson, Larry Dubov 
+                    </u></a>
                 </p>
 
+                <h4>° Registry Hub</h4>
+                <img src="/static/img/mdm/Registry_Hub.png" alt="Registry Hub Architecture" width="60%" style="border-radius: 8px; margin: 10px;">
 
+                <p>{{ translate(text='
+                    Este estilo de arquitectura, utiliza los repositorios de metadatos o de datos que tienen alguna referencia hacia las 
+                    característcas de los datos maestros, permitiendo tener una referencia en tiempo real al intentar de ensamblar 
+                    o de obtener de manera dinámica una vista de datos maestros. Este estilo de repositorio únicamente proporciona los 
+                    datos en modo de lectura, por lo que queda omitido cualquier tipo de transacción con fines de mutación.
+                    ', src='es', dest=['en']) }}
+                </p>
+                
+                <h4>° Coexistence  Hub</h4>
+                <img src="/static/img/mdm/Coexistence_hub.png" alt="Coexistence Hub Architecture" width="60%" style="border-radius: 8px; margin: 10px;">
+
+                <h4>° Transaction Hub</h4>
+                <img src="/static/img/mdm/Transaction_Hub.png" alt="Transaction Hub Architecture" width="60%" style="border-radius: 8px; margin: 10px;">
+                
             </div>
         </div>
     </main>
