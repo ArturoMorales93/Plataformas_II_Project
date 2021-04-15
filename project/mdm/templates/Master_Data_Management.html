@@ -237,6 +237,36 @@
                 <h4>° Transaction Hub</h4>
                 <img src="/static/img/mdm/Transaction_Hub.png" alt="Transaction Hub Architecture" width="60%" style="border-radius: 8px; margin: 10px;">
                 
+                <p>{{ translate(text='
+                    Este estilo de arquitectura almacena físicamente los datos maestros, por lo que es principalmente utilizado
+                    como sistema autoritativo sobre los datos maestros.
+                    Soporta servicios y clientes que desencadenan transacciones directamente al Data Hub y este contiene|1 scripts
+                    o funcionalidades que publican los resultados de las transacciones hacia los sistemas y clientes externos.
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <p>{{ translate(text='
+                    Es una buena elección si la estrategia de la empresa es dejar de invertir recursos en los sistemas de 
+                    orígenes de datos, ya que al final esta estrategia formará el Data Hub que contiene a los datos maestros 
+                    y la autorización para efecturar las transacciones.
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <h5>Advantages:</h5>
+                <ul>
+                    <li>- This is a comprehensive solution that can be used to phase out obsolete legacy systems.</li>
+                    <li>- This style closely approximates one of the goals of full MDM, which is to create an accurate and timely system of data.</li>
+                </ul>
+
+                <h5>Disadvantages:</h5>
+                <ul>
+                    <li>- The Data Hub results in the highest complexity of implementation.</li>
+                    <li>- Usually demands the highest cost and implementation risk.</li>
+                    <li>- This style requires that careful attention is paid to the extensibility and scalability aspects</li>
+                </ul>
+
+                <h3>Conclusion</h3>
+
             </div>
         </div>
     </main>
