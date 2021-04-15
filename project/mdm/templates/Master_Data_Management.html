@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An article about Master Data Management. Enjoy.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/static/img/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <title>Master Data Management</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+            <a class="navbar-brand" href="/en/mdm" id="iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-cpu-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                    <path
+                        d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z" />
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="section-article">
+        
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="iot-img-container">    
+                    <img src="/static/img/mdm/MDM.png" alt="Imagen ilustrativa" class="iot-img mb-4">
+                </div>
+
+                <h2>
+                    What is Master Data Management?
+                </h2>
+
+                <div class="author m-5">
+                    <div>
+                        <p>Publication date: April 6, 2021</p>
+                        <p>Updated: April 13, 2021</p>
+                        <p class="author-nombre">Authors: Brenda Rojas, Efrain Araya and Carlos Mairena</p>
+                    </div>
+                </div>
+        
+                <p>{{ translate(text='
+                    Master Data Management (MDM) se considera como una metodología utilizada por grandes empresas en el mundo para 
+                    controlar y asegurar la masiva cantidad de información que estas crean, comparten y utilizan para operar. En resumen, 
+                    MDM no es específicamente una tecnología para implementar en una organización, sino, una serie de procesos
+                    y políticas que finalmente reposan en alcanzar los Data Master, con el objetivo de alcanzar a "single version of the truth."
+                    en los datos más críticos.
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <p style="font-style: italic; margin-bottom: 0px; font-size: 15px;">
+                    "Over the last few decades, it's become increasingly obvious that data has huge value to the enterprise that holds it. 
+                    But data is also a complicating factor to the software that manipulates it. We need to change our software regularly to 
+                    generate more value for our users, but the very data that fuels this value also makes it more difficult to change."
+                </p>
+                <small><b>By: <a href="https://martinfowler.com/data/" target="_blank"><u>Martin Fowler</u></a></b></small>
+        
+                <p style="margin-top: 15px;">{{ translate(text='
+                    Conforme las empresas van emergiendo y en lo mejor de los casos crecen exponencialmente, estas generan información cada 
+                    vez más importante para su funcionamiento, así también sucede que cierta información van siendo obsoleta o va 
+                    perdiendo su relevancia. En todas las empresas, se encuentran una serie de tipos de datos, donde empresas expertas 
+                    clasificacan los datos, algunas de estas ofrecen servicios de integración MDM (example:
+                    ', src='es', dest=['en']) }}
+                    <a href="https://www.ibm.com/analytics/master-data-management" target="_blank" rel="noopener noreferrer">IBM</a>,
+                    <a href="https://profisee.com/" target="_blank" rel="noopener noreferrer">Profisee</a>)
+                </p>
+
+                <hr>
+                <h3 class="text-center">Processes and Domains/Entities enterprise integrated in MDM</h3>
+                <img src="/static/img/mdm/process-min.jpg" alt="process illustrative" width="60%" style="border-radius: 8px;">
+
+
+                <p>{{ translate(text='
+                    Todas las compañías contienen niveles de acceso a la información, procesos de producción, productos, servicios, clientes,
+                    etc. 
+                    Todos estos factores en MDM se pueden identificar como DOMINIOS, principalmente para poder clasificar los 
+                    grupos de datos, de igual manera, estos datos pueden estar almacenados y expresados de múltiples maneras, por lo que 
+                    la metodología MDM y años de estudio han concluido en clasificar a', src='es', dest=['en']) }} <b>DATA TYPES</b>.
+                </p>
+
+                <h4>Types of data typically found in corporations</h4>
+                <dl>
+                    <dt>Unstructured Data</dt>
+                    <dd>- These are found in the body of emails, printed documents, product specifications, PDF files.</dd>
+                    
+                    <dt>Transactional Data</dt>
+                    <dd>- These are all those data originating from events and functions of the company related to monetary transactions 
+                        such as sales and purchases, but also to non-monetary transactions, but quantitative ones.</dd>
+
+                    <dt>Metadata</dt>
+                    <dd>- This is data that identifies and or defines other data. These are commonly found in repositories that have 
+                        some level of formality, such as documents in XML and JSON format, spreadsheets, etc.</dd>
+
+                    <dt>Hierarchical Data</dt>
+                    <dd>- They are data that is stored and related to other data to form information. They can be distributed among 
+                        different computer data, but these must in some way relate the data they have to form the information.
+                    </dd>
+
+                    <dt>Reference Data</dt>
+                    <dd>- This is a type of Master Data, used to categorize data or also to relate data to some important information in 
+                        the company.
+                    </dd>
+                    
+                    <dt>Master Data</dt>
+                    <dd>- The type of data that has been discussed in this document, this corresponds to the core of the most important 
+                        data of a company, this in turn has different access interfaces to only the data necessary for the other systems.
+                    </dd>
+                </dl>
+
+                <hr>
+                
+                <h3 class="text-center">
+                    Arquitectural Considerations
+                </h3>
+                <img src="/static/img/mdm/checklist-min.jpg" alt="architecture illustrative" width="60%" style="border-radius: 8px;">
+
+                <p>{{ translate(text='
+                    Tal como se ha mencionado, el Master Data Management no es un problema o solución tecnológica directamente, sino que 
+                    contiene componentes tecnológicos, es mucho más que una Base de Datos de productos o de algún otro dominio.
+                    También algunos otros componentes o capas que conforman el MDM son "tradicionales" de la industria tecnológica.
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <p>{{ translate(text='
+                    Antes de iniciar con todos los procesos para impelementar MDM con alguna arquitectura popular o recomendada por alguna 
+                    empresa u otros, es necesario considerar lo siguiente:
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        There are many architecture viewpoints, significant complexity, and a large number of interdependencies to warrant 
+                        a framework-based approach to the architecture. This multifaceted, multidimensional architecture framework looks at 
+                        the overall problem domain from different but complementary angles.
+                    </li>
+                    <li class="list-group-item">
+                        An architectural vision can help organize the “old” and the “new” features into an integrated, scalable, and 
+                        manageable solution.
+                    </li>
+                    <li class="list-group-item">
+                        Any solution intended to create an authoritative, accurate, and timely system of record that should eventually 
+                        replace existing legacy sources of the information must be integrated with the overall enterprise architecture 
+                        and infrastructure.
+                    </li>
+                </ul>
+                
+                <hr>
+                <h3 class="text-center">
+                    Data Hub Architecture Styles
+                </h3>
+
+                <p>{{ translate(text='
+                    Tomando en cuenta las consideraciones mencionadas, y en base a estas haber formado el framework-based approach architecture,
+                    podemos ahora tomar en cuenta las tres arquitecturas más populares de la industria con respecto al MDM, estas 
+                    arquitecturas se han tomado del libro:', src='es', dest=['en']) }} 
+                    <a href="https://learning.oreilly.com/library/view/master-data-management/9780071744584/" target="_blank"><u>
+                        "MASTER DATA MANAGEMENT AND DATA GOVERNANCE, 2/E, 2nd Edition". by Alex Berson, Larry Dubov 
+                    </u></a>
+                </p>
+
+                <h4>° Registry Hub</h4>
+                <img src="/static/img/mdm/Registry_Hub.png" alt="Registry Hub Architecture" width="60%" style="border-radius: 8px; margin: 10px;">
+
+                <p>{{ translate(text='
+                    Este estilo de arquitectura, utiliza los repositorios de metadatos o de datos que tienen alguna referencia hacia las 
+                    característcas de los datos maestros, permitiendo tener una referencia en tiempo real al intentar de ensamblar 
+                    o de obtener de manera dinámica una vista de datos maestros. Este estilo de repositorio únicamente proporciona los 
+                    datos en modo de lectura, por lo que queda omitido cualquier tipo de transacción con fines de mutación.
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <p>{{ translate(text='
+                    El Registry Hub se recomienda cuando la estrategia de la empresa sea principalmente conservar los sistemas actuales, 
+                    para posteriormente hacerles mejoras y reparaciones gradualmente.
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <p>{{ translate(text='
+                    Como es de esperar, este estilo de arquitectura tiene sus ventajas y desventajas:
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <h5>Advantages:</h5>
+                <ul>
+                    <li>- The lowest-cost master data integration solution.</li>
+                    <li>- The data flow changes are limited and implementation risks are minimized.</li>
+                    <li>- Only data reconciliation between the legacy and the new Data Hub systems is required.</li>
+                </ul>
+
+                <h5>Disadvantages:</h5>
+                <ul>
+                    <li>- Performance is low compared to other architectures when multiple data repositories must be accessed.</li>
+                    <li>- In this case the attributes “compete” for survivorship to resolve the conflicts.</li>
+                    <li>- With the goal of "data survivorship" if there is a high complexity in assembling data to form one, the performance 
+                        will be drastically reduced.</li>
+                </ul>
+                
+                <h4>° Coexistence  Hub</h4>
+                <img src="/static/img/mdm/Coexistence_hub.png" alt="Coexistence Hub Architecture" width="60%" style="border-radius: 8px; margin: 10px;">
+
+                <p>
+                    This style of architecture physically stores some master data that contains references to some other data in the system.
+                    This Data Hub style is not used to directly originate transactions, but is updated from the source systems 
+                    that initiate transactions. The Data Hub is used as a central reference point for master data.
+                </p>
+
+                <p>{{ translate(text='
+                    Es una buena elección si la estrategia de la empresa es conservar parcialmente algunos de los sistemas ya implementados y
+                    refactorizar o alterar algunos de ellos, ya que permite utilizarse como un paso hacia la arquitectura "Transaction Hub".
+                    ', src='es', dest=['en']) }}
+                </p>
+
+
+                <h5>Advantages:</h5>
+                <ul>
+                    <li>- The Coexistence Data Hub solution cost is relatively low.</li>
+                    <li>- Data retrieval performance issues are resolved by storing certain data attributes in the Data Hub.</li>
+                </ul>
+
+                <h5>Disadvantages:</h5>
+                <ul>
+                    <li>- Some transformations required to maintain Data Hub content can be quite complex.</li>
+                    <li>- This style assumes some data redundancy, its design must allow for synchronization and reconciliation of data 
+                        changes between the source systems and the data center.
+                    </li>
+                </ul>
+
+                <h4>° Transaction Hub</h4>
+                <img src="/static/img/mdm/Transaction_Hub.png" alt="Transaction Hub Architecture" width="60%" style="border-radius: 8px; margin: 10px;">
+                
+                <p>{{ translate(text='
+                    Este estilo de arquitectura almacena físicamente los datos maestros, por lo que es principalmente utilizado
+                    como sistema autoritativo sobre los datos maestros.
+                    Soporta servicios y clientes que desencadenan transacciones directamente al Data Hub y este contiene|1 scripts
+                    o funcionalidades que publican los resultados de las transacciones hacia los sistemas y clientes externos.
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <p>{{ translate(text='
+                    Es una buena elección si la estrategia de la empresa es dejar de invertir recursos en los sistemas de 
+                    orígenes de datos, ya que al final esta estrategia formará el Data Hub que contiene a los datos maestros 
+                    y la autorización para efecturar las transacciones.
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <h5>Advantages:</h5>
+                <ul>
+                    <li>- This is a comprehensive solution that can be used to phase out obsolete legacy systems.</li>
+                    <li>- This style closely approximates one of the goals of full MDM, which is to create an accurate and timely system of data.</li>
+                </ul>
+
+                <h5>Disadvantages:</h5>
+                <ul>
+                    <li>- The Data Hub results in the highest complexity of implementation.</li>
+                    <li>- Usually demands the highest cost and implementation risk.</li>
+                    <li>- This style requires that careful attention is paid to the extensibility and scalability aspects</li>
+                </ul>
+
+                <h3>Conclusion</h3>
+
+                <p>{{ translate(text='
+                    Se ha estudiado de manera muy generalizada sobre Master Data Management, sin embargo se ha tomado en cuenta 
+                    para este artículo las consideraciones antes de implementar una solución de MDM, además de los estilos de 
+                    arquitectura más populares. Es recomendable leer más a profundidad sobre MDM, por el cual este artículo
+                    se basa en el libro:', src='es', dest=['en']) }} 
+                    <u>"MASTER DATA MANAGEMENT AND DATA GOVERNANCE, 2/E, 2nd Edition". by Alex Berson, Larry Dubov</u>
+                </p>
+
+                <p>{{ translate(text='
+                    El MDM es muy interesante, muy importante y escalable, pero se debe considerar que esta solución ha sido 
+                    diseñada para situaciones abrumadoras de información en una compañía, o cuando esta empieza a sufrir con 
+                    con nuevos problemas que afectan el rendimiento de sus operaciones debido la exhaustiva búsqueda de información. 
+                    ', src='es', dest=['en']) }}
+                </p>
+
+                <p>{{ translate(text='
+                    En otros escenarios, la complejidad de los sistemas de orígenes de información puede hacer que conforme pasa
+                    el tiempo estos datos también se vuelvan complejos de manera innecesaria. 
+                    Lo cual afectará directamente por los costos de mantenimiento y el tiempo que el equipo de ingeniería deberá
+                    invertir en vez de estar realizando nuevos algoritmos que optimicen los sistemas.
+                    ', src='es', dest=['en']) }}
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+        <div class="footer-container">
+            © Todos los Derechos Reservados 2021
+        </div>
+        </p>
+    </footer>
+
+    <!-- Up-button -->
+    <div>
+        <a href="#">
+            <svg id="arroUpButton" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                class="bi bi-arrow-up-circle-fill arrow-up" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/js/jquery-3.5.1.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/scripts.js"></script>
+</body>
+
+</html>
